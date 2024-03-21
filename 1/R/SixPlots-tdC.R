@@ -28,7 +28,7 @@
 
   
   time.s<-time.y[seq(from=1,to=length(time.y),by=subsample)]
-  rm(con.s)
+  # rm(con.s)
   con.s<-as.matrix(con[seq(from=1,to=length(time.y),by=subsample),])
   z.max=max(con.s, na.rm = T)
   z.min=max(min(con.s, na.rm = T), 0)

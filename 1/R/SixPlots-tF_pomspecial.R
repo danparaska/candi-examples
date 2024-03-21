@@ -136,7 +136,7 @@ files[i] = "pomspecial"
   # mtext(2,text=expression("(mmol m"^-2*"d"^-1*")"),cex=axis.label.size,line=2.8)
   # mtext(2,text=expression("Sediment water flux (mmol m "^-2*"d "^-1*")"),cex=axis.label.size,line=3.7)
   mtext(2,text=expression("Sediment water flux (mmol m "^-2*"y "^-1*")")
-        ,cex=axis.label.size,line=4)
+        ,cex=axis.label.size,line=3.5)
   par(xpd=T)
   # legend( x = max(timey)*0.75, y = max(chem)*0.5
   #        ,legend = c("Before aquaculture"

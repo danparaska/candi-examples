@@ -1,13 +1,12 @@
-
 # Set the working directory to the location on your computer
-setwd("V:/danp/2024/candi-examples/1/R")
+# setwd("V:/danp/2024/candi-examples/1/R")
+setwd("C:/Users/00074264/AED Dropbox/AED_Aquaculture_db/3_data/candi-examples/R")
 
 # Plotting loop settings
 zones<-c(1)
 z=1
 files<-c( 
   "oxy"
-  ,"h2s"
   ,"nit"
   ,"no2"
   ,"frp"

@@ -49,7 +49,7 @@ y.axis.sequence = round_any(seq(from=0,to=max(average.C,na.rm = T)
 spinupindex    <- which.min(abs(time.y - (spinuplength-1)));spinupindex # 10
 
 
-thresh.y<-c(threshold,threshold)
+# thresh.y<-c(threshold,threshold)
 
 colseq=(matrix(ncol=3
               ,nrow=length(timeindices)
