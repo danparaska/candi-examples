@@ -1,29 +1,20 @@
 # Set the working directory to the location on your computer
 setwd("V:/danp/2024/candi-examples/1/R")
 
+# Load an image to display in the plotting grid
+the.figure<-load.image("Overview2.png")
+
 # Plotting loop settings
 zones<-c(1)
 z=1
 files<-c( 
   "oxy"
   ,"nit"
-  ,"no2"
-  ,"frp"
-  ,"h2s"
-  ,"n2o"
+  ,"amm"
   ,"poml"
   ,"pomr"
   ,"pomspecial"
-  ,"so4"
-  ,"no2"
   ,"ch4"
-  ,"feii"
-  ,"feoh3a"
-  ,"feoh3b"
-  ,"fes2"
-  ,"n2"
-  ,"salinity"
-  ,"fes"
 )
 i=1
 num<-c("A","B","C","D","E","F","G")
@@ -41,8 +32,8 @@ source("MultiplotSettings.R")
   #   print(x)
 
 for(z in 1){
-  # for(i in 1:length(files)){
-  for(i in 1:4){
+  for(i in 1:length(files)){
+  # for(i in 1:4){
 folder<-paste0("../results/candi_aed/")
 print(files[i])
   png(filename=paste0(folder,"../../6P_",files[i],"_.png")
@@ -66,7 +57,8 @@ print(files[i])
 source("LoadSedData.R")#0 Load the flux and concentration data
   # Six plots through the 2 by 3 grid
 source("SixPlots-tF_y.R")#1
-source("SixPlots-tF_pomspecial.R")#2
+# source("SixPlots-tF_pomspecial.R")#2
+  plot(the.figure,axes=F)#2
 source("SixPlots-tdC.R")#3
 source("C_at_t_av.R")#4
 source("SixPlots-tbot2.R")#5
