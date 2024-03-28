@@ -258,26 +258,24 @@
    substep_1   = 48
    substep_2   = 48
    substep_3   = 60
-   firststeps  = 0.0 ! 0.1 y = 30 days at substep_0
+   firststeps  = 0.0 
    justwaitabit= 15.5 
    timeswitch  = 0
  !-- Zones details  --!
    n_zones =   1
-   active_zones = 1,2,3,4 !:x
+   active_zones = 1,2,3,4 
    zone_types   = 1,1,1,1 ! Sediment "type" in each
  !-- General setup options  --!
-!   dbase        = '../aed_candi_params.csv'
    dbase        = 'aed_sdg/aed_candi_params.csv'
    vars_files   = 'aed_sdg/aed_sdg_vars.csv'
-!   vars_files   = '../aed_sdg_vars.csv'
    geochem_file = 'aed_sdg/aed_geochem_pars.dat'
  !-- Boundary Conditions  --!
    swibc_mode   = 10   ! 10 = swibc, 2 = fluxonfluxoff
    deepbc_mode  = 1   ! previously ibbc
    swibc_file   = 'aed_sdg/swibc.dat'
    deepbc_file  = 'aed/aed_sediment_deepbc.dat'
-   swibc_filevars  = 'pomspecial', 'w00h00', !'substep' !, 'n2' ! 'oxy', 'nit', 'amm', 'frp', 'poml'   ! from_bc_file
-   deepbc_filevars = '' ! ,OXY_oxy,                            ! use_deep_bc
+   swibc_filevars  = 'pomspecial', 'w00h00', 
+   deepbc_filevars = '' 
    flux_scale = 1
    fluxon = 10
    fluxoff = 11
@@ -299,7 +297,7 @@
  !-- Outputs  --!
    diag_level = 10
    output_profiles    =   .TRUE.
-   morevariables      = 'FSal','FSul','bioturb','cirrig','RNO3','RNO2','RNO2O2', 'RO2', 'RN2O', 'RRootsO2','Rgpp', 'Rrsp'  !'NH4release' !'RPOMspecial', 'ydotPOMspecial', 'FSal','FSul','bioturb','cirrig',, 'RNH4OX', 'rnh4no2','ROMFeOH'
+   morevariables      = 'FSal'
    output_diag_vars   = 'oxy','amm','docl','docr'
    n_ddpths           = 1
    output_diag_depths = 1.0
