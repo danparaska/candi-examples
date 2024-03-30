@@ -13,5 +13,6 @@ library(MASS)
 library(readxl)
 library(fields)
 library(readr)
+library(imager)
 
 
