@@ -17,14 +17,19 @@ For instructions on running GLM, please see this workbook:
 
 The GLM simulation directory contains the main control file 'glm3.nml'.
 
+<p align="center">
 <img src = "FileStructure-01.png" width=50%>
+</p>
 
 This file has a section for setting the water quality models. The water quality model parameter will be set to 'aed.nml', which is in the 'aed_sdg' subdirectory.
 
+<p align="center">
 <img src = "FileStructure-03.png" width=50%>
+</p>
 
 The 'aed.nml' contains a section that sets the parameters for the sediment model, with the heading '&aed_sed_candi'. Parameters are listed in this section that control some model settings. The '&aed_sed_candi' section also lists the paths and names of other input files, such as those for the the variables, parameters and boundary conditions.
 
-<img src = "FileStructure-02.png" width=100%>
-
+<p align="center">
+<img src = "FileStructure-02.png" width=75%>
+</p>
 1
