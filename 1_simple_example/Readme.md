@@ -42,6 +42,13 @@ The 'aed.nml' contains a section that sets the parameters for the sediment model
 
 Using the sediment model will mostly involve changing settings in these files. To explore the files, use the program Visual Studio Code or some combination of file explorer and a text editor. Two projects are created for you in the simluation folder: 'candi-examples_setup' for the setup (input parameters) and 'candi-examples_results' for the results (above all, plotting). 
 
+Once the model has been run, GLM will write its outputs to a netcdf file in the 'outputs' folder. The sediment model writes its outputs to text files in the 'results/candi_aed' directory. Each set of results is grouped in a folder for each zone that is simulated (00001, 00002 etc.). The state variables are text files as '.sed' files. Any extra files beyond state variables are written in a subdirectory within the zone-specific folder named 'Extras'.
+
+<p align="center">
+<img src = "FileStructure-04.png" width=50%>
+</p>
+
+
 ## The sediment model
 
 A full description of the sediment model is given here:
