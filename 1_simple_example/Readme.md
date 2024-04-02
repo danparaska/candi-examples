@@ -27,9 +27,6 @@ For instructions on running GLM, please see this workbook:
 
 The GLM simulation directory contains the main control file 'glm3.nml'.
 
-![alt_text](https://github.com/danparaska/candi-examples/blob/main/1_simple_example/FileStructure-01.png?raw=true)
-
-
 ![alt_text](FileStructure-01.png?raw=true)
 
 ```{r Readme1, echo=FALSE, fig.cap="The simulation directory contains the glm.nml file.",fig.show='hold',fig.align='center' ,out.width = '60%'}
