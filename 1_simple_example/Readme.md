@@ -1,14 +1,4 @@
-
----
-title: "Candi Example 1"
-output: github_document
-date: "2024-03-22"
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
+# Readme
 ## Access the binary
 
 Find the latest model binary at this location
@@ -35,4 +25,6 @@ This file has a section for setting the water quality models. The water quality 
 
 The 'aed.nml' contains a section that sets the parameters for the sediment model, with the heading '&aed_sed_candi'. Parameters are listed in this section that control some model settings. The '&aed_sed_candi' section also lists the paths and names of other input files, such as those for the the variables, parameters and boundary conditions.
 
-<img src = "FileStructure-02.png" width=50%>
+<img src = "FileStructure-02.png" width=100%>
+
+1
