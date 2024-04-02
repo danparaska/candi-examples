@@ -221,9 +221,9 @@
    si_uptake_target_variable = 'SIL_rsi'
    do_uptake_target_variable = 'OXY_oxy'
    c_uptake_target_variable = 'CAR_dic'
-   !dbase = 'aed/aed2_phyto_pars_28April2022_constant.nml'
-   !dbase = 'aed/aed2_phyto_pars_20April2022_constant.nml'
-   dbase = 'aed/aed2_phyto_pars_2May2022_RQT.nml'
+   !dbase = 'aed_sdg/aed2_phyto_pars_28April2022_constant.nml'
+   !dbase = 'aed_sdg/aed2_phyto_pars_20April2022_constant.nml'
+   dbase = 'aed_sdg/aed2_phyto_pars_2May2022_RQT.nml'
    diag_level = 10
    min_rho = 900
    max_rho = 1200
@@ -273,7 +273,7 @@
    swibc_mode   = 10   ! 10 = swibc, 2 = fluxonfluxoff
    deepbc_mode  = 1   ! previously ibbc
    swibc_file   = 'aed_sdg/swibc.dat'
-   deepbc_file  = 'aed/aed_sediment_deepbc.dat'
+   deepbc_file  = 'aed_sdg/aed_sediment_deepbc.dat'
    swibc_filevars  = 'pomspecial', 'w00h00', 
    deepbc_filevars = '' 
    flux_scale = 1
@@ -311,13 +311,13 @@
    pp_target_variable = 'OGM_pop'
    dc_target_variable = 'OGM_doc'
    pc_target_variable = 'OGM_poc'
-   dbase = 'aed/aed_zoop_pars.nml'
+   dbase = 'aed_sdg/aed_zoop_pars.nml'
 /
 &aed_bivalve
    num_biv = 1
    the_biv = 1
    X_c = 1
-   dbase = 'aed/aed_bivalve_pars.nml'
+   dbase = 'aed_sdg/aed_bivalve_pars.nml'
    n_zones = 1
    active_zones = 1
    initFromDensity = .false.

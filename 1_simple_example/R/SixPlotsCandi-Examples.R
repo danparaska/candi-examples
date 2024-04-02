@@ -1,7 +1,7 @@
-# Set the working directory to the location on your computer
-setwd("V:/danp/2024/candi-examples/1/R")
+# Load packages
+source("Packages.R") # Load plotting and data management packages.
 
-# Load an image to display in the plotting grid
+#Load an image to display in the plotting grid
 the.figure<-load.image("Overview2.png")
 
 # Plotting loop settings
@@ -17,11 +17,8 @@ files<-c(
   ,"ch4"
 )
 i=1
-num<-c("A","B","C","D","E","F","G")
-n=1
 
-# Load other scripts
-source("Packages.R") # Load plotting and data management packages.
+# Load other plot settings
 source("ColourSettings.R")
 source("MultiplotSettings.R")
 
