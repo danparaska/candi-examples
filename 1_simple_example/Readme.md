@@ -16,7 +16,7 @@ For instructions on running GLM, please see this workbook:
 This simulation is configured to run the GLM lake model as a host for the sediment model, however, dynamic coupling is disabled. The lake outputs of GLM can be disregarded for the focus and the focus is on the sediment results. 
 
 <p align="center">
-<img src = "UncoupledGLM-16.png" width=50%>
+<img src = "UncoupledGLM-16.png" width=25%>
 </p>
 
 
