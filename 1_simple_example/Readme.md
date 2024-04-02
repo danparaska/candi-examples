@@ -27,7 +27,7 @@ For instructions on running GLM, please see this workbook:
 
 The GLM simulation directory contains the main control file 'glm3.nml'.
 
-![alt_text](FileStructure-01.png?raw=true)
+![alt_text](FileStructure-01.png? width=50% height=50%)
 
 ```{r Readme1, echo=FALSE, fig.cap="The simulation directory contains the glm.nml file.",fig.show='hold',fig.align='center' ,out.width = '60%'}
 knitr::include_graphics("FileStructure-01.png")
