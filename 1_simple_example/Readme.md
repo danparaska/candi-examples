@@ -67,5 +67,5 @@ To create a plot, use the VSC file 'candi-examples_results' and install the RStu
 Once plot, the figure will look like this:
 
 <p align="center">
-<img src = "Readmeimages/6P_amm_.png" width=25%>
+<img src = "Readmeimages/6P_amm_.png" width=50%>
 </p>
