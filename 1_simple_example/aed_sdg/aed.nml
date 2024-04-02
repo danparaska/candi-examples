@@ -264,14 +264,14 @@
  !-- Zones details  --!
    n_zones =   1
    active_zones = 1,2,3,4 
-   zone_types   = 1,1,1,1 ! Sediment "type" in each
+   zone_types   = 1,1,1,1 
  !-- General setup options  --!
    dbase        = 'aed_sdg/aed_candi_params.csv'
    vars_files   = 'aed_sdg/aed_sdg_vars.csv'
    geochem_file = 'aed_sdg/aed_geochem_pars.dat'
  !-- Boundary Conditions  --!
-   swibc_mode   = 10   ! 10 = swibc, 2 = fluxonfluxoff
-   deepbc_mode  = 1   ! previously ibbc
+   swibc_mode   = 10   
+   deepbc_mode  = 1   
    swibc_file   = 'aed_sdg/swibc.dat'
    deepbc_file  = 'aed_sdg/aed_sediment_deepbc.dat'
    swibc_filevars  = 'pomspecial', 'w00h00', 
