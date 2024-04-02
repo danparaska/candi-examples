@@ -28,19 +28,19 @@ This simulation is configured to run the GLM lake model as a host for the sedime
 The GLM simulation directory contains the main control file 'glm3.nml'.
 
 <p align="center">
-<img src = "Readmeimages/FileStructure-01.png" width=50%>
+<img src = "Readmeimages/FileStructure-01.png" width=33%>
 </p>
 
 This glm.nml file has a section for setting the water quality models, &wq_setup. The parameter 'wq_lib' is set to 'aed' and the 'wq_nml_file' is set to 'aed.nml', which is in the 'aed_sdg' subdirectory.
 
 <p align="center">
-<img src = "Readmeimages/FileStructure-03.png" width=50%>
+<img src = "Readmeimages/FileStructure-03.png" width=33%>
 </p>
 
 The 'aed.nml' contains a section that sets the parameters for the sediment model, with the heading '&aed_sed_candi'. Parameters are listed in this section that control some model settings. The '&aed_sed_candi' section also lists the paths and names of other input files, such as those for the the variables, parameters and boundary conditions. 
 
 <p align="center">
-<img src = "Readmeimages/FileStructure-02.png" width=75%>
+<img src = "Readmeimages/FileStructure-02.png" width=60%>
 </p>
 
 Using the sediment model will mostly involve changing settings in these files. To explore the files, use the program Visual Studio Code or some combination of file explorer and a text editor. Two projects are created for you in the simluation folder: 'candi-examples_setup' for the setup (input parameters) and 'candi-examples_results' for the results (above all, plotting). 
