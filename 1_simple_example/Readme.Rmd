@@ -1,5 +1,4 @@
-
-## Access the binary {.unnumbered}
+# Access the binary
 
 Find the latest model binary at this location.
 
