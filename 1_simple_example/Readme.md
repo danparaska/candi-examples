@@ -27,20 +27,12 @@ For instructions on running GLM, please see this workbook:
 
 The GLM simulation directory contains the main control file 'glm3.nml'.
 
-![alt_text](FileStructure-01.png? raw=TRUE width=50% height=50%)
-
-```{r Readme1, echo=FALSE, fig.cap="The simulation directory contains the glm.nml file.",fig.show='hold',fig.align='center' ,out.width = '60%'}
-knitr::include_graphics("FileStructure-01.png")
-```
+<img src = "FileStructure-01.png" width=50%>
 
 This file has a section for setting the water quality models. The water quality model parameter will be set to 'aed.nml', which is in the 'aed_sdg' subdirectory.
 
-```{r Readme2, echo=FALSE, fig.cap="glm3.nml points to aed.nml.",fig.show='hold',fig.align='center' ,out.width = '60%'}
-knitr::include_graphics("FileStructure-03.png")
-```
+<img src = "FileStructure-03.png" width=50%>
 
 The 'aed.nml' contains a section that sets the parameters for the sediment model, with the heading '&aed_sed_candi'. Parameters are listed in this section that control some model settings. The '&aed_sed_candi' section also lists the paths and names of other input files, such as those for the the variables, parameters and boundary conditions.
 
-```{r Readme3, echo=FALSE, fig.cap="aed.nml points to other input files",fig.show='hold',fig.align='center' ,out.width = '60%'}
-knitr::include_graphics("FileStructure-02.png")
-```
+<img src = "FileStructure-02.png" width=50%>
