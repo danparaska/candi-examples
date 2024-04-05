@@ -69,7 +69,7 @@ Add higher concentrations of the relevant variables: pocl, ponr, dopl etc. in th
 Plot these variables with the RStudio plotting script. Add pocl, ponr, dopl to the ‘files’ variable, towards the top of the script SixPlotsCandi-Examples.R.
 
 <p align="center">
-<img src = "Readmeimages/Porosity-01.png" width=25%>
+<img src = "Readmeimages/OMModels-28.png" width=25%>
 </p>
 
 
@@ -86,7 +86,7 @@ Adjust any of the limitation or inhibition constants. The parameters are named a
 You can create images of the limitation and inhibition by adding extra variables. They are listed in aed.nml, at the parameter ‘morevariables’. Examples include ‘FTEAO2’, ‘FINNO3’ etc. The resulting .sed files are saved in the Extras directory, in results/candi_aed/zone/Extras. Use the plotting script ‘SixplotsExtras.R’.
 
 <p align="center">
-<img src = "Readmeimages/Porosity-01.png" width=25%>
+<img src = "Readmeimages/FTEAFIn-02.png" width=25%>
 </p>
 
 
@@ -102,6 +102,7 @@ Change the parameter ‘knh4ox’ in aed_candi_params. This parameter controls t
 <img src = "Readmeimages/NModel1.png" width=25%>
 </p>
 
+
 ## Adsorption
 
 ### Parameters: NH4AdsorptionModel, knh4p, DOMAdsorptionModel, kdomp, PO4AdsorptionModel, kpo4p, ads_use_pH 
@@ -111,5 +112,18 @@ Change the switches to turn adsorption on, then adjust the adsorption coefficien
 
 <p align="center">
 <img src = "Readmeimages/Adsorption-22.png" width=25%>
+</p>
+
+
+## Bioturbation and irrigation
+
+### Parameters: imix, DB0, xs, α0, xirrig
+### *aed_candi_params.csv*
+
+Change the bioturbation and irrigation parameters. There may be a point where the model stops working, due to, for example, too little mixing, or sharp concentration gradients. Plot the shapes of the profiles from the Depths.R.
+
+<p align="center">
+<img src = "Readmeimages/Bioturb-02.png" width=25%>
+<img src = "Readmeimages/Irrig-01.png" width=25%>
 </p>
 
