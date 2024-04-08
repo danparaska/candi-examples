@@ -9,7 +9,7 @@ source("InstallPackages.R") # Install plotting and data management packages if y
 source("LoadPackages.R") # Load plotting and data management packages that you have installed.
 
 # Load an image to display in the plotting grid
-the.figure<-load.image("Overview2.png")
+the.figure<-load.image(../Readmeimages/"Overview2.png")
 
 # Plotting loop settings
 zones<-c(1)
