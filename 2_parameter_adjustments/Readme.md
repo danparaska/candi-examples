@@ -23,6 +23,8 @@ Use ‘xl’ to change the depth of the sediment simulated, from say, 10 cm to 4
 
 Use ‘maxnpts’ to set the number of layers simulated. Note that job 0 requires maxnpts to be depth × an integer + 1.
 
+Plot the grid profile by opening the folder 'R_Depths', then the project 'R_Depths', then the plotting script 'GridStructure.R'. With an even grid, the line will be a constant value down the y axis; with an exponentially increasing grid, the line will be increasing with depth.
+
 <p align="center">
 <img src = "Readmeimages/job1job2-01.png" width=25%>
 </p>
@@ -47,7 +49,7 @@ Set the deposition rate ‘w00’ to be large or small. Plot and save the result
 
 Run two simulations with high and low porosity. p0 is the porosity at the sediment-water interface, and p00 is the porosity at the deep. You may find that extremes of porosity, the model experiences errors. 
 
-Plot the porosity profiles. 
+Plot the porosity profile by opening the folder 'R_Depths', then the project 'R_Depths', then the plotting script 'Porosity.R'. 
 
 <p align="center">
 <img src = "Readmeimages/Porosity-01.png" width=25%>
@@ -121,6 +123,8 @@ Change the switches to turn adsorption on, then adjust the adsorption coefficien
 ### *aed_candi_params.csv*
 
 Change the bioturbation and irrigation parameters. There may be a point where the model stops working, due to, for example, too little mixing, or sharp concentration gradients. Plot the shapes of the profiles from the Depths.R.
+
+Plot the bioturbation and irrigation profiles by opening the folder 'R_Depths', then the project 'R_Depths', then the plotting scripts 'Irrigation' and 'Bioturbation'. 
 
 <p align="center">
 <img src = "Readmeimages/Bioturb-02.png" width=25%>
