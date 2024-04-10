@@ -18,6 +18,7 @@ ifelse( max(eins) < desired.depths[2] ,depthindex.2<-length(eins),depthindex.2<-
 depthindex.3<-length(eins)
 
 row1<-as.matrix(     file[1,1:depthindex  ]    )            #layernum]) # Top row
+class(row1)<-"numeric"
 the.depths<-row1[2:length(row1)]
 roundy=5
 y.axis.sequence      = round_any(seq(from=max(bw.sed.depths),to=min(bw.sed.depths)
@@ -65,6 +66,7 @@ colseq=(matrix(ncol=length(depthindices)
               ,newglencolours[ 1:length(times_d) ]
               ));colseq
 colseq[4]="grey85"
+class(linematrix)<-"numeric"
 ifelse( abs(max(times,na.rm=T))>1
         ,roundx.CD   <- 10^floor(log10(abs(max(linematrix,na.rm=T))) )/10
         ,roundx.CD   <- 10^floor(log10(abs(min(linematrix,na.rm=T))) )/10

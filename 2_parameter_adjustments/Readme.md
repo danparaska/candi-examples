@@ -85,10 +85,10 @@ Plot these variables with the RStudio plotting script. Add pocl, ponr, dopl to t
 
 Adjust any of the limitation or inhibition constants. The parameters are named as ‘kpo2’, ‘kpno3’ etc. The units of the parameter are in concentration. 
 
-You can create images of the limitation and inhibition by adding extra variables. They are listed in aed.nml, at the parameter ‘morevariables’. Examples include ‘FTEAO2’, ‘FINNO3’ etc. The resulting .sed files are saved in the Extras directory, in results/candi_aed/zone/Extras. Use the plotting script ‘SixplotsExtras.R’.
+You can create images of the limitation and inhibition by adding extra variables. Listed  these extra vairables in 'aed.nml', at the parameter ‘morevariables’. Examples include ‘FTEAO2’, ‘FINNO3’ etc. The resulting .sed files are saved in the Extras directory, in results/candi_aed/zone/Extras. Use the plotting script ‘SixplotsExtras.R’.
 
 <p align="center">
-<img src = "Readmeimages/FTEAFIn-02.png" width=25%>
+<img src = "Readmeimages/FTEAFIn-02.png" width=33%>
 </p>
 
 
@@ -127,7 +127,7 @@ Change the bioturbation and irrigation parameters. There may be a point where th
 Plot the bioturbation and irrigation profiles by opening the folder 'R_Depths', then the project 'R_Depths', then the plotting scripts 'Irrigation' and 'Bioturbation'. 
 
 <p align="center">
-<img src = "Readmeimages/Bioturb-02.png" width=25%>
+<img src = "Readmeimages/Bioturb-02.png" width=33%>
 <img src = "Readmeimages/Irrig-01.png" width=25%>
 </p>
 

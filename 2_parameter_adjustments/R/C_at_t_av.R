@@ -17,8 +17,8 @@ ifelse( max(eins) < desired.depths[2] ,depthindex.2<-length(eins),depthindex.2<-
 depthindex.3<-length(eins)
 
 row1<-as.matrix(     file[1,1:depthindex  ]    )            #layernum]) # Top row
+class(row1)<-"numeric"
 the.depths<-row1[2:length(row1)]
-
 depthindices=NULL
    depthindex<-which.min(abs(the.depths - avdep) )
 timeindices=NULL
@@ -86,10 +86,10 @@ axis(3,cex.axis=axis.tick.size,xaxs="i",yaxs="i",line=0.4,lwd = 0
      ,at=axis.sequence
 ) # The labels
 axis(1,tck=T,tcl=-0.3,xaxs="i",yaxs="i",line=0,col.axis="white"
-     ,at=axis.sequence.y
+     ,at=axis.sequence
 ) # The ticks
 axis(1,cex.axis=axis.tick.size,xaxs="i",yaxs="i",line=+0.50,lwd = 0
-     ,at=axis.sequence.y
+     ,at=axis.sequence
      ,labels=date.axis.sequence.2
 ) # The labels
 threetext<-expression("Concentration at final time (mmol L "^-1*")")
