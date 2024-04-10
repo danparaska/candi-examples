@@ -127,7 +127,7 @@ Change the bioturbation and irrigation parameters. There may be a point where th
 Plot the bioturbation and irrigation profiles by opening the folder 'R_Depths', then the project 'R_Depths', then the plotting scripts 'Irrigation' and 'Bioturbation'. 
 
 <p align="center">
-<img src = "Readmeimages/Bioturb-02.png" width=33%>
+<img src = "Readmeimages/Bioturb-02.png" width=50%>
 <img src = "Readmeimages/Irrig-01.png" width=25%>
 </p>
 
