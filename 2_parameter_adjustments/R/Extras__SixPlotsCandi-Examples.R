@@ -10,11 +10,11 @@ source("LoadPackages.R") # Load plotting and data management packages that you h
 
 # Load an image to display in the plotting grid
 figure<-c(
-"../Readmeimages/FTEAFIn-02.png"
-,"../Readmeimages/Bioturb-02.png"
-,"../Readmeimages/Irrig-01.png"
-#,"../Readmeimages/FSal.png"
-#,"../Readmeimages/FSul.png"
+   "../Readmeimages/FTEAFIn-02.png"
+   ,"../Readmeimages/Bioturb-02.png"
+   ,"../Readmeimages/Irrig-01.png"
+   ,"../Readmeimages/FSal-02.png"
+   ,"../Readmeimages/FSul-02.png"
 )
 
 # Plotting loop settings
@@ -24,8 +24,8 @@ extrafiles<-c(
   "RO2"
   ,"bioturb"
   ,"cirrig"
-  #,"FSal"
-  #,"FSul"
+  ,"FSal"
+  ,"FSul"
 )
 i=1
 

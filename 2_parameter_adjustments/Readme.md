@@ -124,10 +124,27 @@ Change the switches to turn adsorption on, then adjust the adsorption coefficien
 
 Change the bioturbation and irrigation parameters. There may be a point where the model stops working, due to, for example, too little mixing, or sharp concentration gradients. Plot the shapes of the profiles from the Depths.R.
 
-Plot the bioturbation and irrigation profiles by opening the folder 'R_Depths', then the project 'R_Depths', then the plotting scripts 'Irrigation' and 'Bioturbation'. 
+Plot the bioturbation and irrigation profiles by opening the folder 'R_Depths', then the project 'R_Depths', then the plotting scripts 'Irrigation' and 'Bioturbation'. You can also plot the time-sensitive changes of bioturbation and irrigation using 'Extras__SixPlotsCandi-Examples.R', plotting the variables named 'bioturbation' and 'cirrig'. 
 
 <p align="center">
 <img src = "Readmeimages/Bioturb-02.png" width=50%>
 <img src = "Readmeimages/Irrig-01.png" width=25%>
+</p>
+
+
+## High salinity
+
+### Parameters: Sal1, Sal2, kh2s
+### *aed_candi_params.csv*
+
+### Variables: salinity, so4
+### *aed_sdg_vars.csv*
+
+To create a hypersaline lagoon, increase the 'default_vals' value for 'salinity' from 33 000 to 66 000. Increase 'so4' to 60 000 mmol m^<sup>-3</sup>.
+Note that 'Sal1' and 'Sal2' are set to 35 and 70 (ppt). 'kh2s' is set to 100 mmol L^<sup>-1</sup>. Plot 'so4', 'salinity' and 'h2s' and compare them to the previous simulation results. Also plot 'bioturbation' and 'cirrig' using 'Extras__SixPlotsCandi-Examples.R'. Change the sulphide sensitivity parameter 'kh2s' and observe the effect on 'FSul' and bioturbation. 
+
+<p align="center">
+<img src = "Readmeimages/FSal-02.png" width=25%>
+<img src = "Readmeimages/FSul-02.png" width=25%>
 </p>
 
