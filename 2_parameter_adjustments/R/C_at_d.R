@@ -31,6 +31,7 @@ timeindices=NULL
 for(t in 1:length(times_d)){
    timeindices[t]<-which.min(abs(time-times_d[t]))#-3
   };timeindices
+timeindices[1]<-timeindices[1]+1
 DTmatrix<-matrix(nrow = length(desired.depths)
                      ,ncol = length(times_d)
                      ,0

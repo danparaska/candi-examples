@@ -297,7 +297,7 @@
  !-- Outputs  --!
    diag_level = 10
    output_profiles    =   .TRUE.
-   morevariables      = 'FSal'
+   morevariables      = 'FSal','FSul','RO2','bioturb','cirrig'
    output_diag_vars   = 'oxy','amm','docl','docr'
    n_ddpths           = 1
    output_diag_depths = 1.0

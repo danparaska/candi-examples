@@ -2,10 +2,10 @@
 
 # Set the working directory. The VSC package is in the candi-examples folder, 
 # therefore you need to set the R working directory to "R".
-setwd("R")
+#setwd("R")
 
 # Load packages
-source("InstallPackages.R") # Install plotting and data management packages if you don't have them installed.
+#source("InstallPackages.R") # Install plotting and data management packages if you don't have them installed.
 source("LoadPackages.R") # Load plotting and data management packages that you have installed.
 
 # Load an image to display in the plotting grid

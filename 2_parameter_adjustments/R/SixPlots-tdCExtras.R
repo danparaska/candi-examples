@@ -14,7 +14,9 @@
   halfdepth <-max(as.numeric(row1))/2
   # depths<-(which.min(row1):which.max(row1))
   #con<-                  row2 2:max time ,   column 2:
-  con <-as.matrix( file [time.start.index+1 :time.stop.index  ,  2:depthindex  ] ) # Concentration matrix
+  con <-as.matrix( file [time.start.index+2 :time.stop.index  ,  2:depthindex  ] ) # Concentration matrix
+  class(con)<-"numeric"
+  
   min(con,na.rm = T)
   max(con,na.rm = T)
   
@@ -26,17 +28,19 @@
   if(time.y[2]==0){time.y[2]<-1e-5}
 
   
-  time.s<-time.y[seq(from=1,to=length(time.y),by=subsample)]
+  time.s<-time.y[seq(from=1,to=length(time.y)-1,by=subsample)]
   # rm(con.s)
-  con.s<-as.matrix(con[seq(from=1,to=length(time.y),by=subsample),])
+  con.s<-as.matrix(con[seq(from=1,to=length(time.y)-1,by=subsample),])
   class(con.s)<-"numeric"
   z.max=(max(con.s, na.rm = T));z.max
   z.max=as.numeric(max(con.s, na.rm = T));z.max
   z.min=as.numeric(max(min(con.s, na.rm = T), 0));z.min
   if(z.min==z.max){z.max=z.min*1.00001}
-  bottom.water.s <- as.matrix(bottom.water[seq(from=1,to=length(time.y),by=subsample),])
+  bottom.water.s <- as.matrix(bottom.water[seq(from=1,to=length(time.y)-1,by=subsample),])
+  class(bottom.water.s)<-"numeric"
   con.s.bw       <- cbind(bottom.water.s,con.s)
   dim(con.s.bw)
+  dim(bottom.water.s)
   dim(con.s)
   length(con.s.bw)
   con.s.bw[is.na(con.s.bw)] <- 0 # replace any NA values
@@ -46,6 +50,7 @@
   class(con.s.bw) <- "numeric"
   class(con.s.bw)
   dim(con.s.bw)
+  length(time.s)
   min(con.s.bw)
   max(con.s.bw)
   datey<-as.Date(time.s,origin = startdate)

@@ -22,10 +22,10 @@ date.axis.sequence.2 = format(date.axis.sequence.1, sep="/", format = "%b-%Y");d
 date.axis.sequence.2.y = format(date.axis.sequence.1, sep="/", format = "%Y");date.axis.sequence.2
 
 
-if(nchar(zones[z])==1){extrased<-(paste0(folder,"0000",zones[z],"/Extras/",files[i],".sed"));depfi<-(paste0(folder,"0000",zones[z],"/Depths.sed"))} # Load sed data}
-if(nchar(zones[z])==2){extrased<-(paste0(folder,"000" ,zones[z],"/Extras/",files[i],".sed"));depfi<-(paste0(folder,"000" ,zones[z],"/Depths.sed"))} # Load sed data}
-if(nchar(zones[z])==3){extrased<-(paste0(folder,"00"  ,zones[z],"/Extras/",files[i],".sed"));depfi<-(paste0(folder,"00"  ,zones[z],"/Depths.sed"))} # Load sed data}
-file    <-fread(file=extrased, header=FALSE, skip=3)# Load sed data
+if(nchar(zones[z])==1){sed<-(paste0(folder,"0000",zones[z],"/",files[i],".sed"));depfi<-(paste0(folder,"0000",zones[z],"/Depths.sed"))} # Load sed data}
+if(nchar(zones[z])==2){sed<-(paste0(folder,"000" ,zones[z],"/",files[i],".sed"));depfi<-(paste0(folder,"000" ,zones[z],"/Depths.sed"))} # Load sed data}
+if(nchar(zones[z])==3){sed<-(paste0(folder,"00"  ,zones[z],"/",files[i],".sed"));depfi<-(paste0(folder,"00"  ,zones[z],"/Depths.sed"))} # Load sed data}
+file    <-fread(file=sed, header=FALSE, skip=3)# Load sed data
 
 eins<-as.matrix(file[1,]) # First column
 

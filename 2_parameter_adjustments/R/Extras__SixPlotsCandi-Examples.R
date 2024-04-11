@@ -9,7 +9,13 @@
 source("LoadPackages.R") # Load plotting and data management packages that you have installed.
 
 # Load an image to display in the plotting grid
-the.figure<-load.image("../Readmeimages/FTEAFIn-02.png")
+figure<-c(
+"../Readmeimages/FTEAFIn-02.png"
+,"../Readmeimages/Bioturb-02.png"
+,"../Readmeimages/Irrig-01.png"
+#,"../Readmeimages/FSal.png"
+#,"../Readmeimages/FSul.png"
+)
 
 # Plotting loop settings
 zones<-c(1)
@@ -18,14 +24,15 @@ extrafiles<-c(
   "RO2"
   ,"bioturb"
   ,"cirrig"
-  # ,"FSal"
-  # ,"FSul"
+  #,"FSal"
+  #,"FSul"
 )
 i=1
 
 # Load other plot settings
 source("ColourSettings.R")
 source("MultiplotSettings.R")
+start.time = 11
 
 ### For looping while running a sim, use the x feature
   # x=0
@@ -38,6 +45,7 @@ for(z in 1){
   # for(i in 1:4){
 folder<-paste0("../results/candi_aed/")
 print(extrafiles[i])
+the.figure<-load.image(figure[i])
   png(filename=paste0(folder,"../../6P_",extrafiles[i],"_.png")
       ,width=widthy,height=heighty  ,res=reso,units="mm"  )
   the.layout<-layout(mat=matrix(nrow=2,ncol=2
