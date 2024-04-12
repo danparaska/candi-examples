@@ -14,7 +14,7 @@ For instructions on running GLM, please see this workbook:
 
 <https://aquaticecodynamics.github.io/glm-workbook/>
 
-GLM is called from this folder and it needs to reference the directory on your computer where the binary 'glm+.exe' is located.
+GLM is called from this folder, where the file 'glm3.nml' is, and it needs to reference the directory on your computer where the binary 'glm+.exe' is located.
 
 This simulation is configured to run the GLM lake model as a host for the sediment model, however, dynamic coupling is disabled. The lake outputs of GLM can be disregarded for the focus and the focus is on the sediment results. 
 
