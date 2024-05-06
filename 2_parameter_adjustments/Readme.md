@@ -165,7 +165,7 @@ Note that 'Sal1' and 'Sal2' are set to 35 and 70 (ppt). 'kh2s' is set to 100 mmo
 Add multiple zones by setting the 'n_zones' to a number greater than 1. The zones used will be those in the list 'active_zones', starting with the first value listed. (These zones align with the zones being run in the lake model, as listed in 'glm3.nml', parameters 'n_zones' and 'zone_heights', however, you do not have to edit these to run the sediment model.) The parameters and variables need to be assigned for each zone. Open 'aed_candi_parameters.csv' and 'aed_sdg_vars.csv' with Excel and make a copy of the parameter and variable values column, one for each zone. The column heading for the parameters is 'zon_1', 'zon_2' etc. The column heading for the variables initial conditions are 'initial_1', 'initial_2' etc., corresponding to the 'active_zones' listed in 'aed.nml'. The results of each zone are found in 'results/candi_aed/00001', 'results/candi_aed/00002' etc. To plot the results, in RStudio, change the 'folder' to match the folder number. Otherwise, use a loop with the zone number to have RStudio plot the results for all zones. 
 
 <p align="center">
-<img src = "Readmeimages/Zones1-03.png" width=25%>
+<img src = "Readmeimages/Zones1-03.png" width=33%>
 </p>
 
 ## Organic matter initial profile
@@ -179,7 +179,7 @@ Add multiple zones by setting the 'n_zones' to a number greater than 1. The zone
 Change the organic matter initial concentration profile parameters. Set the initial concentration in 'aed_sdg_vars.csv'. Set the depth where the initial profile changes using 'InitMinDepthL' for labile organic matter and 'InitMinDepthR' for refractory organic matter. Set the percentage of the initial concentration at the 'InitMinDepth' using 'OM_MinL' and 'OM_MinR'. 
 
 <p align="center">
-<img src = "Readmeimages/InitialProfile-04.png" width=25%>
+<img src = "Readmeimages/InitialProfile-04.png" width=33%>
 <img src = "Readmeimages/InitialProfile-06.png" width=25%>
 </p>
 
