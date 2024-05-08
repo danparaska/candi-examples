@@ -179,7 +179,7 @@ Add multiple zones by setting the 'n_zones' to a number greater than 1. The zone
 Change the organic matter initial concentration profile parameters. Set the initial concentration in 'aed_sdg_vars.csv'. Set the depth where the initial profile changes using 'InitMinDepthL' for labile organic matter and 'InitMinDepthR' for refractory organic matter. Set the percentage of the initial concentration at the 'InitMinDepth' using 'OM_MinL' and 'OM_MinR'. 
 
 <p align="center">
-<img src = "Readmeimages/InitialProfile-04.png" width=33%>
+<img src = "Readmeimages/InitialProfile-04.png" width=50%>
 <img src = "Readmeimages/InitialProfile-06.png" width=25%>
 </p>
 
