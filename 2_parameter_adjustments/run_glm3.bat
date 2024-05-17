@@ -1,1 +1,0 @@
-..\..\releasebinary\windows\glm+.exe >logfile 2>&1
