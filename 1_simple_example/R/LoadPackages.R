@@ -6,7 +6,7 @@ library(MASS)
 library(fields)
 library(readxl)
 library(readr)
-library(imager)
+#library(imager)
 
 
  

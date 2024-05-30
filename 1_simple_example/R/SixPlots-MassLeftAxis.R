@@ -76,14 +76,7 @@ ifelse( abs(max(flux.cumul,na.rm=T))>1
 # y.axis.sequence      = round_any(seq(from=0,to=max(mas.sum),length.out=tick.master.y),roundy,f=floor);y.axis.sequence
 y.axis.sequence      = round_any(seq(from=0,to=max(mas.sum, na.rm = T),length.out=tick.master.y),roundy,f=floor);y.axis.sequence
 y.axis.sequence.sig  = signif(y.axis.sequence,digits = 2);y.axis.sequence.sig
-# y.axis.sequence.2    = round_any(seq(from = min(flux.cumul[3:length(flux.cumul)])
-y.axis.sequence.2    = round_any(seq(from = min(flux.cumul[3:length(flux.cumul)],
-                                                bot.cumul, na.rm = T)
-                                     ,to  = max(flux.cumul[3:length(flux.cumul)],
-                                                bot.cumul, na.rm = T)
-                                     ,length.out=tick.master.y)
-                                 ,roundy.2,f=floor);y.axis.sequence.2
-if(anyNA(y.axis.sequence.2)){y.axis.sequence.2=0}
+
 
 plot(timey, mas.1.sum
 # plot(timey, (matt.top.1.sum+

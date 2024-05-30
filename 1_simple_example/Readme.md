@@ -1,20 +1,24 @@
 # Get started with this simulation
 
-## Access the binary
+This folder contains a CANDI-AED simulation as part of a General Lake Model (GLM) simulation. It is set up to be a general marine sediment, though not any specific study site, and the lake's water column is not the focus of this exercise. The focus is to set up the workflow correctly, according to the following steps:
 
-Find the latest model binary at this location
+- Download the GLM model binary file
+- Examine the CANDI-AED setup using Visual Studio Code or a text editor
+- Run the GLM model from this simulation directory
+- Create a plot of the results 
+
+## Access the GLM binary
+
+The GLM binary is the computer program that runs the lake simulation. You can find the latest model binary at this location
 
 <https://github.com/AquaticEcoDynamics/releases/tree/main/GLM-AED/3.3.x>
 
-To run GLM in Windows, go to the 'windows' directory and get the binary named 'glm+' that was committed most recently. To run GLM on Linux, go to the 'ubuntu' directory and get the binary named 'glm+' that was committed most recently.
+To run GLM in Windows, go to the 'windows' directory and get the binary named 'glm+' that was uploaded most recently. 
+To run GLM on Linux, go to the 'ubuntu' directory and get the binary named 'glm+' that was uploaded most recently.
+
+Since we are using CANDI-AED, which is an advanced feature, we need to use 'glm+' rather than 'glm'.
 
 ## Run GLM 
-
-For instructions on running GLM, please see this workbook:
-
-<https://aquaticecodynamics.github.io/glm-workbook/>
-
-GLM is called from this folder, where the file 'glm3.nml' is, and it needs to reference the directory on your computer where the binary 'glm+.exe' is located.
 
 This simulation is configured to run the GLM lake model as a host for the sediment model, however, dynamic coupling is disabled. The lake outputs of GLM can be disregarded for the focus and the focus is on the sediment results. 
 
@@ -22,8 +26,43 @@ This simulation is configured to run the GLM lake model as a host for the sedime
 <img src = "Readmeimages/UncoupledGLM-16.png" width=25%>
 </p>
 
+GLM is called from this folder (1_simple_example), where the file 'glm3.nml' is, and GLM needs to reference the directory on your computer where the binary 'glm+.exe' is located. 
+
+If you are using Windows, set the path from the simulation directory to the binary inside the batch file 'run_glm.bat'.
+If you are using Linux, navigate to this simulation directory, then call the binary from here, starting with './', for example, './../../releasebinary\windows\glm+_3.3.1\glm+_3.3.1\glm+.exe'.
+
+For general instructions on running GLM, please see this workbook:
+
+<https://aquaticecodynamics.github.io/glm-workbook/>
+
+## The sediment model
+
+A full description of the sediment model is given here:
+
+https://aquaticecodynamics.github.io/aed-science/sediment-biogeochemistry.html
+
+To view the settings of GLM or CANDI-AED open the VSC file 'candi-examples_setup'. 
+
+This example is generally similar to a marine sediment, based on the following settings:
+
+- low organic matter
+- marine salinity and SO_4^{2-} concentration
+- high porosity
+- bioturbation and bioirrigation
+
+## Plotting
+
+To create a plot, use the VSC file 'candi-examples_results' and install the RStudio extension. Open the file 'SixPlotsCandi-Examples.R' from the 'R' folder and run the whole file. This .R file calls the other .R files in the 'R' directory. There may be some errors while installing packages, however, once this is overcome, the script should run efficiently in VSC. As an alternative, use the RStudio project in the 'R' folder and run 'SixPlotsCandi-Examples.R' line by line or as needed. 
+
+Once plot, the figure will look like this:
+
+<p align="center">
+<img src = "Readmeimages/6P_amm_.png" width=50%>
+</p>
 
 ## GLM-SDG file structure 
+
+You may notice that you are looking at a lot of model folders and files. If you would like to understand how the folders and files are structured, an overview is given below. 
 
 The GLM simulation directory contains the main control file 'glm3.nml'.
 
@@ -52,20 +91,3 @@ Once the model has been run, GLM will write its outputs to a netcdf file in the 
 </p>
 
 
-## The sediment model
-
-A full description of the sediment model is given here:
-
-https://aquaticecodynamics.github.io/aed-science/sediment-biogeochemistry.html
-
-A set of exercises is presented within this folder, where a variety of settings and parameters are changed, in order to present the range of capabilities of the model. Each setting can be changed, then the results analysed, and then the settings returned to the base case.
-
-## Plotting
-
-To create a plot, use the VSC file 'candi-examples_results' and install the RStudio extension. Open the file 'SixPlotsCandi-Examples.R' from the 'R' folder and run the whole file. This .R file calls the other .R files in the 'R' directory. There may be some errors while installing packages, however, once this is overcome, the script should run efficiently in VSC. As an alternative, use the RStudio project in the 'R' folder and run 'SixPlotsCandi-Examples.R' line by line or as needed. 
-
-Once plot, the figure will look like this:
-
-<p align="center">
-<img src = "Readmeimages/6P_amm_.png" width=50%>
-</p>

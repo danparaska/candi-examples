@@ -165,7 +165,7 @@
          lpSO4, 1.6
          lSO4, 1.6
          maxnpts, 41
-         MPBDepth, 1
+         MPBDepth, 0
          n, 1
          NH4AdsorptionModel, 1
          numOM, 3

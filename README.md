@@ -1,3 +1,7 @@
 # candi-examples
 
-Start with the folder '1_simple_example' to ensure that the workflow is set up correctly. When that is completed, follow the examples in '2_parameter_adjustments' to learn some of the key parameters, variables and boundary conditions. 
+This repository contains examples of CANDI-AED simulations.
+
+The first folder, '1_simple_example', is designed to ensure that the workflow is set up correctly. This example is not related to a specific study site. 
+
+The second folder, '2_parameter_adjustments', contains steps to learn some of the key parameters, variables and boundary conditions. 
