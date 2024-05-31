@@ -47,7 +47,7 @@ This example is generally similar to a marine sediment, based on the following s
 
 - low organic matter
 - marine salinity and SO_4^{2-} concentration
-- high porosity
+- low porosity
 - bioturbation and bioirrigation
 
 ## Plotting

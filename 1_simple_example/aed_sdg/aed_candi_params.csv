@@ -171,8 +171,8 @@
          numOM, 3
          OMapproach, 1
          OMModel, 1
-         p0, 0.9
-         p00, 0.6
+         p0, 0.6
+         p00, 0.5
          pf_on,     .false.
          PhotoO2Rate, 0
          PO4AdsorptionModel, 1
