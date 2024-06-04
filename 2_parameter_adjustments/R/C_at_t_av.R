@@ -27,17 +27,22 @@ for(t in 1:length(times_d)){
   }
 thecol=as.numeric(depthindex);thecol
 C_at_t<-as.matrix(file[time.start.index:time.stop.index
-             ,3:thecol  ])
+             ,2:thecol  ])
 
-somedepths<-row1[1:depthindex]
-
+somedepths<-the.depths[2:depthindex]
+length(the.depths)
+length(somedepths)
 weighteddepths=NULL
-somedepths[0]<-0
+#somedepths[0]<-0
 weighteddepths[1]<-0
-for (d in 2:depthindex) {
-  weighteddepths[d]<-(somedepths[d]-somedepths[d-1])/(somedepths[depthindex])#-somedepths[maxd-1])
-}
-weighted.C<-C_at_t*weighteddepths[3:depthindex]
+for (d in 2:(depthindex-1)) {
+  weighteddepths[d]<-(somedepths[d]-somedepths[d-1])/(somedepths[depthindex-1])#-somedepths[maxd-1])
+};weighteddepths
+length(weighteddepths)
+dim(C_at_t)
+
+weighted.C<-sweep(C_at_t, STATS = weighteddepths, MARGIN = 2, FUN = "*")
+# weighted.C<-  C_at_t * weighteddepths[3:depthindex]
 average.C<-rowSums(weighted.C)
 
 ifelse( abs(max(average.C,na.rm=T))>0

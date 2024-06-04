@@ -3,3 +3,5 @@
 .RData
 .Ruserdata
 1/output/output.nc
+output.nc
+*.sed

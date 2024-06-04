@@ -171,27 +171,27 @@
          numOM, 3
          OMapproach, 1
          OMModel, 1
-         p0, 0.6
+         p0 , 0.5
          p00, 0.5
          pf_on,     .false.
          PhotoO2Rate, 0
          PO4AdsorptionModel, 1
          pocl2docl, 90
-         pocr2docr, 0.0001
-         pocu, 1000
+         pocr2docr, 10
+         pocu, 0
          pocvr2docr, 0
          poml2dic, 100
          poml2doml, 1
          pomr2dic, 0.05
          poms2dom, 1
-         pomspecial2dic, 10
+         pomspecial2dic, 1.0E-10
          ponl2donl, 90
          ponr2donr, 0.0001
-         ponu, 400
+         ponu, 0
          ponvr2donr, 0
          popl2dopl, 90
          popr2dopr, 0.0001
-         popu, 1
+         popu, 0
          popvr2dopr, 0
          poreflux, 0
          Qmax, 1.05

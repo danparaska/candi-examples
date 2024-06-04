@@ -251,14 +251,14 @@
    spinup_days = 0
    spinup_dt   = 1
    driver_dt   = 3600
-   substep     = 120    
-   substep_0   = 48
+   substep     = 84   
+   substep_0   = 72
    substep_1   = 48
    substep_2   = 48
    substep_3   = 60
-   firststeps  = 0.0 
+   firststeps  = 0.5
    justwaitabit= 15.5 
-   timeswitch  = 0
+   timeswitch  = 2
  !-- Zones details  --!
    n_zones =   1
    active_zones = 1,2,3,4 
@@ -268,11 +268,11 @@
    vars_files   = 'aed_sdg/aed_sdg_vars.csv'
    geochem_file = 'aed_sdg/aed_geochem_pars.dat'
  !-- Boundary Conditions  --!
-   swibc_mode   = 0   
+   swibc_mode   = 10   
    deepbc_mode  = 1   
    swibc_file   = 'aed_sdg/swibc.dat'
    deepbc_file  = 'aed_sdg/aed_sediment_deepbc.dat'
-   swibc_filevars  = 'pomspecial', 'w00h00', 
+   swibc_filevars  = 'pomspecial', 'n2' 
    deepbc_filevars = '' 
    flux_scale = 1
    fluxon = 10
@@ -295,7 +295,7 @@
  !-- Outputs  --!
    diag_level = 10
    output_profiles    =   .TRUE.
-   morevariables      = 'FSal'
+   morevariables      =  'FSal','FSul','bioturb','cirrig','RNO3','RNO2', 'RN2O', 'RNH4OX', 'rnh4no2','RNO2O2'
    output_diag_vars   = 'oxy','amm','docl','docr'
    n_ddpths           = 1
    output_diag_depths = 1.0

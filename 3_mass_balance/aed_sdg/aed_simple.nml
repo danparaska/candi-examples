@@ -9,8 +9,8 @@
    'aed_nitrogen',
    'aed_phosphorus',
    'aed_organic_matter'
-!   'aed_phytoplankton',
-!   'aed_totals'
+   'aed_phytoplankton',
+   'aed_totals'
    'aed_seddiagenesis'
 /
 &aed_sedflux
@@ -203,7 +203,7 @@
    diag_level = 10
 /
 &aed_phytoplankton
-   num_phytos = 0
+   num_phytos = 3
    the_phytos = 1, 2, 3
    settling = 1, 1, 1
    do_mpb = 0
@@ -221,7 +221,9 @@
    si_uptake_target_variable = 'SIL_rsi'
    do_uptake_target_variable = 'OXY_oxy'
    c_uptake_target_variable = 'CAR_dic'
-   dbase = 'aed_sdg/aed2_phyto_pars_2May2022_RQT.nml'
+   !dbase = 'aed/aed2_phyto_pars_28April2022_constant.nml'
+   !dbase = 'aed/aed2_phyto_pars_20April2022_constant.nml'
+   dbase = 'aed/aed2_phyto_pars_2May2022_RQT.nml'
    diag_level = 10
    min_rho = 900
    max_rho = 1200
@@ -249,36 +251,33 @@
 &aed_sed_candi
  !-- Time things --!
    spinup_days = 0
-   spinup_dt   = 1
-   driver_dt   = 3600
-   substep     = 120    
-   substep_0   = 48
-   substep_1   = 48
-   substep_2   = 48
-   substep_3   = 60
-   firststeps  = 0.0 
-   justwaitabit= 15.5 
-   timeswitch  = 0
+   spinup_dt   = 0.25
+   driver_dt   =  3600
+   substep     = 72       
+   substep_0   = 24
+   substep_1   = 24
+   substep_2   = 24
+   substep_3   = 24
+   firststeps  = 0 
  !-- Zones details  --!
    n_zones =   1
-   active_zones = 1,2,3,4 
-   zone_types   = 1,1,1,1 
+   active_zones = 1,2,3,4 !:x
+   zone_types   = 1,1,1,1 ! Sediment "type" in each
  !-- General setup options  --!
    dbase        = 'aed_sdg/aed_candi_params.csv'
-   vars_files   = 'aed_sdg/aed_sdg_vars.csv'
+   vars_files   = 'aed_sdg/aed_sdg_vars_28.csv'
    geochem_file = 'aed_sdg/aed_geochem_pars.dat'
  !-- Boundary Conditions  --!
-   swibc_mode   = 0   
-   deepbc_mode  = 1   
-   swibc_file   = 'aed_sdg/swibc.dat'
-   deepbc_file  = 'aed_sdg/aed_sediment_deepbc.dat'
-   swibc_filevars  = 'pomspecial', 'w00h00', 
-   deepbc_filevars = '' 
+   swibc_mode   = 10   ! previously ibc2
+   deepbc_mode  = 1   ! previously ibbc
+   swibc_file   = 'aed_sdg/swibc_solute.dat'
+   deepbc_file  = 'aed/aed_sediment_deepbc.dat'
+   swibc_filevars  = 'n2', 'pomspecial' ! 'oxy', 'nit', 'amm', 'frp', 'poml'   ! from_bc_file
+   deepbc_filevars = '' ! ,OXY_oxy,                            ! use_deep_bc
    flux_scale = 1
-   fluxon = 10
-   fluxoff = 11
-   sal_swi = 0
-   sul_swi = 0
+   timeswitch = 1
+   fluxon = 0.5
+   fluxoff = 1.5
  !-- Initial Conditions  --!
    SolidInitialUnit = 'mmolLsolid'
    OMInitMethodL = 'LI_I'
@@ -287,21 +286,21 @@
    OM_cfL = 0.6
    InitMinDepthL = 99
    OMInitMethodR = 'LI_I'
-   OM_topR = 1.0
-   OM_minR = 0.01
-   OM_cfR = 0.99
-   InitMinDepthR = 15
+   OM_topR = 1
+   OM_minR = 0.9
+   OM_cfR = 0.6
+   InitMinDepthR = 99
    POMVR = 0.3
  !-- Outputs  --!
    diag_level = 10
    output_profiles    =   .TRUE.
-   morevariables      = 'FSal'
+   morevariables      = 'RPOMspecial', 'ydotPOMspecial'
    output_diag_vars   = 'oxy','amm','docl','docr'
    n_ddpths           = 1
    output_diag_depths = 1.0
 /
 &aed_zooplankton
-   num_zoops = 0
+   num_zoops = 1
    the_zoops = 1
    dn_target_variable = 'OGM_don'
    pn_target_variable = 'OGM_pon'
@@ -309,13 +308,13 @@
    pp_target_variable = 'OGM_pop'
    dc_target_variable = 'OGM_doc'
    pc_target_variable = 'OGM_poc'
-   dbase = 'aed_sdg/aed_zoop_pars.nml'
+   dbase = 'aed/aed_zoop_pars.nml'
 /
 &aed_bivalve
-   num_biv = 0
+   num_biv = 1
    the_biv = 1
    X_c = 1
-   dbase = 'aed_sdg/aed_bivalve_pars.nml'
+   dbase = 'aed/aed_bivalve_pars.nml'
    n_zones = 1
    active_zones = 1
    initFromDensity = .false.
