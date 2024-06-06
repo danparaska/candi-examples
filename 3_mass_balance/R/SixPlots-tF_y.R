@@ -2,7 +2,7 @@
   # uno  <- as.numeric(as.matrix(fluxdata[3:length(as.matrix(fluxdata[,1])) ,1]) )
   headings <- as.matrix(fluxdata[1,])
   fluxcol  <- as.numeric(which(headings==files[i]))
-  issolid  <- as.matrix(fluxdata[2, ..fluxcol])
+  issolid  <- as.logical(as.matrix(fluxdata[2, ..fluxcol]))
   chemcol  <- as.matrix(fluxdata[ 3:length(as.matrix(fluxdata[,1])) , ..fluxcol ])
   chem     <- as.matrix(chemcol[ time.start.index:time.stop.index ])
   chem     <- as.numeric(chem)/1 # /365 to convert from yearly to daily
@@ -117,3 +117,4 @@
 # } # End function
 
   
+

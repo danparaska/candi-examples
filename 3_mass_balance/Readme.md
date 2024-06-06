@@ -62,19 +62,91 @@ Use the plotting script 'SixPlotsCandi-Examples.R' and make the multi-panel plot
 
 This section lists ways to show how a mass error can be created. These are pitfalls that you can avoid when you set up a simulation. Change these settings, then run the model again, then make a plot.
 
-### Porosity gradient
+### Bioturbation at two depths
 
-Set 'p0' to 0.9 and 'p00' to 0.5. This should result in less sediment mass than influxed mass for both solids and solutes.
+Change the parameter 'imix' from 2 to 1. This sets bioturbation to have linear steps. Set 'x1' to 2 (cm) and 'x2' to 4 (cm). This may produce a good mass result. Tune the parameters until the mass balance worsens.
+
+
+<p align="center">
+<img src = "Readmeimages/Bioturb-02.png" width=50%>
+</p>
+
+
+<p align="center">
+<img src = "aed_sdg_biotubation-two-depths/Bioturbation.png" width=50%>
+</p>
+
+<p align="center">
+<img src = "aed_sdg_biotubation-two-depths/Porosity.png" width=50%>
+</p>
+
+
+<p align="center">
+<img src = "aed_sdg_bioturbation-two-depths/6P_pomspecial.png" width=50%>
+</p>
+
+<p align="center">
+<img src = "aed_sdg_bioturbation-two-depths/6P_n2.png" width=50%>
+</p>
 
 ### High porosity
 
 Set both 'p0' and 'p00' to 0.75. This should result in a good solid balance but a higher sediment mass than influxed mass for solutes.
 
+
+<p align="center">
+<img src = "aed_sdg_high-porosity/Bioturbation.png" width=50%>
+</p>
+
+<p align="center">
+<img src = "aed_sdg_high-porosity/Porosity.png" width=50%>
+</p>
+
+
+<p align="center">
+<img src = "aed_sdg_high-porosity/1P_pomspecial.png" width=50%>
+</p>
+
+<p align="center">
+<img src = "aed_sdg_high-porosity/1P_n2.png" width=50%>
+</p>
+
 ### Low porosity
 
 Set both 'p0' and 'p00' to 0.25. This should result in a good solid balance but a lower sediment mass than influxed mass for solids.
 
-### Bioturbation cutoffs
+<p align="center">
+<img src = "aed_sdg_low-porosity/Bioturbation.png" width=50%>
+</p>
 
-Change the parameter 'imix' from 2 to 1. This sets bioturbation to have linear steps. Set 'x1' to 2 (cm) and 'x2' to 4 (cm). This may produce a good mass result. Tune the parameters until the mass balance worsens.
+<p align="center">
+<img src = "aed_sdg_low-porosity/Porosity.png" width=50%>
+</p>
 
+<p align="center">
+<img src = "aed_sdg_low-porosity/1P_Mass_n2_.png" width=50%>
+</p>
+
+<p align="center">
+<img src = "aed_sdg_low-porosity/1P_Mass_pomspecial_.png" width=50%>
+</p>
+
+### Porosity gradient
+
+Set 'p0' to 0.9 and 'p00' to 0.5. This should result in less sediment mass than influxed mass for both solids and solutes.
+
+<p align="center">
+<img src = "aed_sdg_porosity-gradient/Bioturbation.png" width=50%>
+</p>
+
+<p align="center">
+<img src = "aed_sdg_porosity-gradient/Porosity.png" width=50%>
+</p>
+
+<p align="center">
+<img src = "aed_sdg_porosity-gradient/1P_Mass_n2_.png" width=50%>
+</p>
+
+<p align="center">
+<img src = "aed_sdg_porosity-gradient/1P_Mass_pomspecial_.png" width=50%>
+</p>

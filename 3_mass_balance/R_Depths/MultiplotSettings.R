@@ -1,6 +1,6 @@
 # Multi-plot standardisation settings
 startdate      = "2025-01-01"
-start.time = 15 # Index for where time axis starts. You might want to cut off a spinup period
+start.time = 3 # Index for where time axis starts. You might want to cut off a spinup period
 stop.time  = 1900
 subsample = 1 # Load less data for big datasets
 desired.depths<-c(1,2,3)

@@ -143,19 +143,19 @@ box(bty="o")
 left.axis.text<-expression("Mass (g m "^-2*")")
 mtext(2,text=left.axis.text,cex=axis.label.size,line=3.7) # 1=bottom, 2=left, 3=top, 4=right
 axis(2,cex.axis=0.7,cex.lab=1.0,tck=T,tcl=-0.2,line=0,tck=T,tcl=-0.3,col.axis="white",at=y.axis.sequence)# Ticks
-axis(2,cex.axis=axis.tick.size,cex.lab=1.0,tck=F,tcl=-0.2,line=0.5,lwd=0,at=y.axis.sequence,las=1)# Labels
+axis(2,cex.axis=axis.label.size,cex.lab=1.0,tck=F,tcl=-0.2,line=0.5,lwd=0,at=y.axis.sequence,las=1)# Labels
 
 axis(3,tck=T,tcl=-0.3,xaxs="i",yaxs="i",line=0,col.axis="white"
      ,at=axis.sequence
 ) # The ticks
-axis(3,cex.axis=axis.tick.size,xaxs="i",yaxs="i",line=0.5,lwd = 0 
+axis(3,cex.axis=axis.label.size,xaxs="i",yaxs="i",line=0.5,lwd = 0 
      ,at=axis.sequence
 ) # The labels
 
 axis(1,tck=T,tcl=-0.3,xaxs="i",yaxs="i",line=0,col.axis="white"
      ,at=axis.sequence
 ) # The ticks
-axis(1,cex.axis=axis.tick.size,xaxs="i",yaxs="i",line=0.50,lwd = 0 
+axis(1,cex.axis=axis.label.size,xaxs="i",yaxs="i",line=0.50,lwd = 0 
      ,at=axis.sequence
      ,labels=date.axis.sequence.2 
 ) # The labels
@@ -188,8 +188,8 @@ flux.cumul.unit.text = expression("Cumulative flux (g m "^"-2"*")")
 # mtext(4,text="Cumulative flux",cex=axis.label.size,line=4.0) # 1=bottom, 2=left, 3=top, 4=right
 # mtext(4,text=flux.cumul.unit.text,cex=axis.label.size,line=5.5) # 1=bottom, 2=left, 3=top, 4=right
 mtext(4,text=flux.cumul.unit.text,cex=axis.label.size,line=5.0) # 1=bottom, 2=left, 3=top, 4=right
-mtext(3,text="Time (number of days)",cex=axis.label.size,line=1.5, adj=0.55)
-mtext(1,text="Time (date)",cex=axis.label.size,line=1.5, adj=0.55)
+mtext(3,text="Time (number of days)",cex=axis.label.size,line=2.5, adj=0.55)
+mtext(1,text="Time (date)",cex=axis.label.size,line=2.5, adj=0.55)
 legend( "left"
         , inset=0.05
         , fill = c(mass.colours[2:4])
