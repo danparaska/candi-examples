@@ -1,17 +1,20 @@
 # Mass conservation check
 
-This folder outlines a method for ensuring that a simulation is conserving mass in the upper layers of the sediment. The boundary concentrations and fluxes are compared with what accumlates in the sediment layers. 
+This folder outlines a method for ensuring that a simulation is conserving mass in the upper layers of the sediment. It is important to check this, because with the wrong settings, numerical errors can lead to the wrong calculation of sediment mass.
 
-After showing how to set it up so that it works, a number of exercises are listed to demonstrate ways that the model can have errors. These can be through numerical errors or chossing the wrong settings. 
+The method for checking this is comparing the boundary concentrations and fluxes with what accumlates in the sediment layers. 
 
-At the end you should have a method for ensuring model accuracy, which should be good practice for any new simulation. 
+After showing how to set it up so that it works, a number of exercises are listed to demonstrate ways that the model can have errors, above all, the porosity settings.
+
+At the end you have a method for ensuring model accuracy, which is good practice for any new simulation. 
 
 ## Approach
-A non-reactive solid and a non-reactive solute are introduced at the sediment-water interface (SWI) as 'tracers'. As they enter at the SWI, the tracers' fluxes and concentrations are converted to mass units, per 1 m^2. The concentrations in the sediment are similarly summmed per 1 m^2, across all depths. 
+
+A non-reactive solid and a non-reactive solute are introduced at the sediment-water interface (SWI) as 'tracers'. As they enter at the SWI, the tracers' fluxes and concentrations are converted to mass units, per 1 m$^2$. The concentrations in the sediment are similarly summmed per 1 m$^2$, across all depths. 
 
 The simulation allows half a year of model time for the model to spin up, then the tracers are introduced at the SWI for one year, then the model continues to run without them. 
 
-The plotting script displays the mass of the incoming and accumulated tracers (per m^2). Even with the best setup, there can be a difference of approximately 10% in the calculated mass of either tracer.
+The plotting script displays the mass of the incoming and accumulated tracers (per m$^2$). Even with the best setup, there can be a difference of approximately 10% in the calculated mass of either tracer.
 
 ## Setup
 
@@ -21,7 +24,7 @@ In 'aed.nml', adjust the time settings as follows:
 
 - 'substep_0' = 72 (hours per timestep). This is the substep until 'firststeps'.
 - 'substep_1' = 48 (hours per timestep). This is the substep after 'firststeps'. 
-- 'firststeps' = 0.5 (years). This is the time when the substep changes to 'substep_1'. We will set this to coincide with the input of tracers.
+- 'firststeps' = 0.5 (years). This is the time when the substep changes to 'substep_1'. We will set this to coincide with the input of tracers. In this way, the model goes through the spinup period quickly, then slows down to process the increased boundary load of the tracers. 
 - 'timeswitch' = 2 (integer switch). This setting allows the substep settings above to function.
 
 ### SWI settings
@@ -34,12 +37,16 @@ In 'aed.nml' adjust the settings as follows:
 
 In 'aed_candi_params.csv' set
 
-- 'OMModel' = 1 (integer switch). 
-- 'pomspecial2dic' = 0 (y^{-1}). This makes the 'pomspecial' that fluxes in unreactive.
+- 'OMModel' = 1 (integer switch). This sets it to the simplest organic matter reaction model. 
+- 'pomspecial2dic' = 0 (y$^{-1}$). Setting this to zero makes the 'pomspecial' that fluxes in unreactive.
 
-Use the file 'swibc.dat'. Note that the 'pomspecial' flux is 1.0E-08 (mmol m^{-2} y^{-1}) and the 'n2' concentration is 1.0E-08 (mmol m^{-3}) for most of the simulation. The model converts the concentration from mmol m^{-3} to mmol L^{-1}, but check that your plot corresponds with this. 
+Use the file 'swibc.dat'. Note that the 'pomspecial' flux is 1.0E-08 (mmol m$^{-2}$ y$^{-1}$) and the 'n2' concentration is 1.0E-08 (mmol m$^{-3}$) for most of the simulation. The model converts the concentration from mmol m$^{-3}$ to mmol L$^{-1}$, but check that your plot corresponds with this. 
 
-At time 183 days (or 0.5 years) the flux and concentration increase to 1.0E+02 (mmol m^{-2} y^{-1}) and 1.0E+05 (mmol m^{-3}). At 548 days (or 1.5 years) the flux and concentration return to the very low number. 
+At time 183 days (or 0.5 years) the flux and concentration increase to 1.0E+02 (mmol m$^{-2}$ y$^{-1}$) and 1.0E+05 (mmol m$^{-3}$). At 548 days (or 1.5 years) the flux and concentration return to the very low number. 
+
+<p align="center">
+<img src = "Readmeimages/Swibc-01.png" width=50%>
+</p>
 
 ### Grid settings
 
@@ -62,46 +69,17 @@ Use the plotting script 'SixPlotsCandi-Examples.R' and make the multi-panel plot
 
 This section lists ways to show how a mass error can be created. These are pitfalls that you can avoid when you set up a simulation. Change these settings, then run the model again, then make a plot.
 
-### Bioturbation at two depths
-
-Change the parameter 'imix' from 2 to 1. This sets bioturbation to have linear steps. Set 'x1' to 2 (cm) and 'x2' to 4 (cm). This may produce a good mass result. Tune the parameters until the mass balance worsens.
-
-
-<p align="center">
-<img src = "Readmeimages/Bioturb-02.png" width=50%>
-</p>
-
-
-<p align="center">
-<img src = "aed_sdg_biotubation-two-depths/Bioturbation_.png" width=50%>
-</p>
-
-<p align="center">
-<img src = "aed_sdg_biotubation-two-depths/Porosity_.png" width=50%>
-</p>
-
-
-<p align="center">
-<img src = "aed_sdg_bioturbation-two-depths/6P_pomspecial_.png" width=50%>
-</p>
-
-<p align="center">
-<img src = "aed_sdg_bioturbation-two-depths/6P_n2_.png" width=50%>
-</p>
-
 ### High porosity
 
 Set both 'p0' and 'p00' to 0.75. This should result in a good solid balance but a higher sediment mass than influxed mass for solutes.
 
-
 <p align="center">
-<img src = "aed_sdg_high-porosity/Bioturbation_.png" width=50%>
+<img src = "aed_sdg_high-porosity/Bioturbation_.png" width=33%>
 </p>
 
 <p align="center">
-<img src = "aed_sdg_high-porosity/Porosity_.png" width=50%>
+<img src = "aed_sdg_high-porosity/Porosity_.png" width=3%>
 </p>
-
 
 <p align="center">
 <img src = "aed_sdg_high-porosity/1P_pomspecial_.png" width=50%>
@@ -116,11 +94,11 @@ Set both 'p0' and 'p00' to 0.75. This should result in a good solid balance but 
 Set both 'p0' and 'p00' to 0.25. This should result in a good solid balance but a lower sediment mass than influxed mass for solids.
 
 <p align="center">
-<img src = "aed_sdg_low-porosity/Bioturbation_.png" width=50%>
+<img src = "aed_sdg_low-porosity/Bioturbation_.png" width=33%>
 </p>
 
 <p align="center">
-<img src = "aed_sdg_low-porosity/Porosity_.png" width=50%>
+<img src = "aed_sdg_low-porosity/Porosity_.png" width=33%>
 </p>
 
 <p align="center">
@@ -136,11 +114,11 @@ Set both 'p0' and 'p00' to 0.25. This should result in a good solid balance but 
 Set 'p0' to 0.9 and 'p00' to 0.5. This should result in less sediment mass than influxed mass for both solids and solutes.
 
 <p align="center">
-<img src = "aed_sdg_porosity-gradient/Bioturbation_.png" width=50%>
+<img src = "aed_sdg_porosity-gradient/Bioturbation_.png" width=33%>
 </p>
 
 <p align="center">
-<img src = "aed_sdg_porosity-gradient/Porosity_.png" width=50%>
+<img src = "aed_sdg_porosity-gradient/Porosity_.png" width=33%>
 </p>
 
 <p align="center">
@@ -150,3 +128,17 @@ Set 'p0' to 0.9 and 'p00' to 0.5. This should result in less sediment mass than 
 <p align="center">
 <img src = "aed_sdg_porosity-gradient/1P_Mass_pomspecial_.png" width=50%>
 </p>
+
+### Bioturbation settings
+
+In this setup, bioturbation does not cause a problem with mass. However, in future simulations, if you have different bioturbation settings, make sure to check it for mass conservation. One of the primary risks is having a sharp cutoff for bioturation at two depths.
+
+<p align="center">
+<img src = "Readmeimages/Bioturb-02.png" width=50%>
+</p>
+
+The bioturbation intensity, 'DB0', might also affect the mass conservation. 
+
+### Space and time increments
+
+With this setup, this simulation can run with a fast timestep and a coarse grid. However, if future simulations have mass balance errors, try increasing the number of layers and decreasing the length of the time steps. 
