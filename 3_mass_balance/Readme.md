@@ -73,20 +73,20 @@ Change the parameter 'imix' from 2 to 1. This sets bioturbation to have linear s
 
 
 <p align="center">
-<img src = "aed_sdg_biotubation-two-depths/Bioturbation.png" width=50%>
+<img src = "aed_sdg_biotubation-two-depths/Bioturbation_.png" width=50%>
 </p>
 
 <p align="center">
-<img src = "aed_sdg_biotubation-two-depths/Porosity.png" width=50%>
+<img src = "aed_sdg_biotubation-two-depths/Porosity_.png" width=50%>
 </p>
 
 
 <p align="center">
-<img src = "aed_sdg_bioturbation-two-depths/6P_pomspecial.png" width=50%>
+<img src = "aed_sdg_bioturbation-two-depths/6P_pomspecial_.png" width=50%>
 </p>
 
 <p align="center">
-<img src = "aed_sdg_bioturbation-two-depths/6P_n2.png" width=50%>
+<img src = "aed_sdg_bioturbation-two-depths/6P_n2_.png" width=50%>
 </p>
 
 ### High porosity
@@ -95,20 +95,20 @@ Set both 'p0' and 'p00' to 0.75. This should result in a good solid balance but 
 
 
 <p align="center">
-<img src = "aed_sdg_high-porosity/Bioturbation.png" width=50%>
+<img src = "aed_sdg_high-porosity/Bioturbation_.png" width=50%>
 </p>
 
 <p align="center">
-<img src = "aed_sdg_high-porosity/Porosity.png" width=50%>
+<img src = "aed_sdg_high-porosity/Porosity_.png" width=50%>
 </p>
 
 
 <p align="center">
-<img src = "aed_sdg_high-porosity/1P_pomspecial.png" width=50%>
+<img src = "aed_sdg_high-porosity/1P_pomspecial_.png" width=50%>
 </p>
 
 <p align="center">
-<img src = "aed_sdg_high-porosity/1P_n2.png" width=50%>
+<img src = "aed_sdg_high-porosity/1P_n2_.png" width=50%>
 </p>
 
 ### Low porosity
@@ -116,11 +116,11 @@ Set both 'p0' and 'p00' to 0.75. This should result in a good solid balance but 
 Set both 'p0' and 'p00' to 0.25. This should result in a good solid balance but a lower sediment mass than influxed mass for solids.
 
 <p align="center">
-<img src = "aed_sdg_low-porosity/Bioturbation.png" width=50%>
+<img src = "aed_sdg_low-porosity/Bioturbation_.png" width=50%>
 </p>
 
 <p align="center">
-<img src = "aed_sdg_low-porosity/Porosity.png" width=50%>
+<img src = "aed_sdg_low-porosity/Porosity_.png" width=50%>
 </p>
 
 <p align="center">
@@ -136,11 +136,11 @@ Set both 'p0' and 'p00' to 0.25. This should result in a good solid balance but 
 Set 'p0' to 0.9 and 'p00' to 0.5. This should result in less sediment mass than influxed mass for both solids and solutes.
 
 <p align="center">
-<img src = "aed_sdg_porosity-gradient/Bioturbation.png" width=50%>
+<img src = "aed_sdg_porosity-gradient/Bioturbation_.png" width=50%>
 </p>
 
 <p align="center">
-<img src = "aed_sdg_porosity-gradient/Porosity.png" width=50%>
+<img src = "aed_sdg_porosity-gradient/Porosity_.png" width=50%>
 </p>
 
 <p align="center">
