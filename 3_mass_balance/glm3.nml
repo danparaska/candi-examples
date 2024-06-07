@@ -9,9 +9,7 @@
 &wq_setup
    wq_lib = 'aed'
    !wq_nml_file = 'aed_sdg/aed.nml'
-   !wq_nml_file = 'aed_sdg_biotubation-two-depths/aed.nml'
-   wq_nml_file = 'aed_sdg_biotubation-two-depths-sharp/aed.nml'
-   !wq_nml_file = 'aed_sdg_high-porosity/aed.nml'
+   wq_nml_file = 'aed_sdg_high-porosity/aed.nml'
    !wq_nml_file = 'aed_sdg_low-porosity/aed.nml'
    !wq_nml_file = 'aed_sdg_porosity-gradient/aed.nml'
    ode_method = 1

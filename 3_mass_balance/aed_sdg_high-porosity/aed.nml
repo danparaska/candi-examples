@@ -252,8 +252,8 @@
    spinup_dt   = 1
    driver_dt   = 3600
    substep     = 84   
-   substep_0   = 72
-   substep_1   = 48
+   substep_0   = 100
+   substep_1   = 80
    substep_2   = 48
    substep_3   = 60
    firststeps  = 0.5
