@@ -84,11 +84,11 @@ Set both 'p0' and 'p00' to 0.75. This should result in a good solid balance but 
 With high porosity, the solid mass reconciles well but the solute mass is higher in the sediment than from the influx. The maximum mass of solute is around 350 g m$^2$. 
 
 <p align="center">
-<img src = "aed_sdg_high-porosity/1P_pomspecial_.png" width=50%>
+<img src = "aed_sdg_high-porosity/1P_Mass_pomspecial_.png" width=50%>
 </p>
 
 <p align="center">
-<img src = "aed_sdg_high-porosity/1P_n2_.png" width=50%>
+<img src = "aed_sdg_high-porosity/1P_Mass_n2_.png" width=50%>
 </p>
 
 ### Low porosity
