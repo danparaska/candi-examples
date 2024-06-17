@@ -2,7 +2,7 @@
 
 ## Fe and SO<sub>4</sub><sup>2-</sup>
 
-### Variables: Fe and SO42- 
+### Variables: Fe and SO<sub>4</sub><sup>2-</sup> 
 ### *aed_sdg_vars.csv*
 
 Add higher concentrations of Fe(OH)3A and SO42- to the file aed_sdg_vars. Add them to the csv column ‘default_vals’, which sets the flux and concentration at the sediment-water interface. Set ‘feoh3a’ to 100.0E+03 (flux in mmol m-2 y-1) and ‘so4’ to 32.0E+03 (concentration in mmol m-3). Plot the output figures for ‘feoh3a’, ‘feii’, ‘so4’ and ‘h2s’. Also plot ‘ch4’ and compare its concentration to the previous example: the implication is that adding SO42- reduces the creation CH4. 
@@ -97,7 +97,7 @@ You can create images of the limitation and inhibition by adding extra variables
 ### Parameters: knh4ox
 ### *aed_candi_params.csv*
 
-Change the parameter ‘knh4ox’ in aed_candi_params. This parameter controls the kinetic rate of NH4+ oxidation to NO3- by O2. The plots should show different amounts of O2, NH4+ and NO3-. 
+Change the parameter ‘knh4ox’ in aed_candi_params. This parameter controls the kinetic rate of NH<sub>4</sub><sup>+</sup> oxidation to NO<sub>3</sub><sup>-</sup> by O<sub>2</sub>. The plots should show different amounts of O<sub>2</sub>, NH<sub>4</sub><sup>+</sup> and NO<sub>3</sub><sup>-</sup>. 
 
 <p align="center">
 <img src = "Readmeimages/NModels-29.png" width=25%>

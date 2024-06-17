@@ -10,11 +10,11 @@ At the end you have a method for ensuring model accuracy, which is good practice
 
 ## Approach
 
-A non-reactive solid and a non-reactive solute are introduced at the sediment-water interface (SWI) as 'tracers'. As they enter at the SWI, the tracers' fluxes and concentrations are converted to mass units, per 1 m$^2$. The concentrations in the sediment are similarly summmed per 1 m$^2$, across all depths. 
+A non-reactive solid and a non-reactive solute are introduced at the sediment-water interface (SWI) as 'tracers'. As they enter at the SWI, the tracers' fluxes and concentrations are converted to mass units, per 1 m<sup>2</sup>. The concentrations in the sediment are similarly summmed per 1 m<sup>2</sup>, across all depths. 
 
 The simulation allows half a year of model time for the model to spin up, then the tracers are introduced at the SWI for one year, then the model continues to run without them. 
 
-The plotting script displays the mass of the incoming and accumulated tracers (per m$^2$). Even with the best setup, there can be a difference of approximately 10% in the calculated mass of either tracer.
+The plotting script displays the mass of the incoming and accumulated tracers (per m<sup>2</sup>). Even with the best setup, there can be a difference of approximately 10% in the calculated mass of either tracer.
 
 ## Setup
 
@@ -38,11 +38,11 @@ In 'aed.nml' adjust the settings as follows:
 In 'aed_candi_params.csv' set
 
 - 'OMModel' = 1 (integer switch). This sets it to the simplest organic matter reaction model. 
-- 'pomspecial2dic' = 0 (y$^{-1}$). Setting this to zero makes the 'pomspecial' that fluxes in unreactive.
+- 'pomspecial2dic' = 0 (y<sup>-1</sup>). Setting this to zero makes the 'pomspecial' that fluxes in unreactive.
 
-Use the file 'swibc.dat'. Note that the 'pomspecial' flux is 1.0E-08 (mmol m$^{-2}$ y$^{-1}$) and the 'n2' concentration is 1.0E-08 (mmol m$^{-3}$) for most of the simulation. The model converts the concentration from mmol m$^{-3}$ to mmol L$^{-1}$, but check that your plot corresponds with this. 
+Use the file 'swibc.dat'. Note that the 'pomspecial' flux is 1.0E-08 (mmol m<sup>-2</sup> y<sup>-1</sup>) and the 'n2' concentration is 1.0E-08 (mmol m<sup>-3</sup>) for most of the simulation. The model converts the concentration from mmol m<sup>-3</sup> to mmol L<sup>-1</sup>, but check that your plot corresponds with this. 
 
-At time 183 days (or 0.5 years) the flux and concentration increase to 1.0E+02 (mmol m$^{-2}$ y$^{-1}$) and 1.0E+05 (mmol m$^{-3}$). At 548 days (or 1.5 years) the flux and concentration return to the very low number. 
+At time 183 days (or 0.5 years) the flux and concentration increase to 1.0E+02 (mmol m<sup>-2</sup> y<sup>-1</sup>) and 1.0E+05 (mmol m<sup>-3</sup>). At 548 days (or 1.5 years) the flux and concentration return to the very low number. 
 
 <p align="center">
 <img src = "Readmeimages/Swibc-01.png" width=50%>
@@ -81,7 +81,7 @@ Set both 'p0' and 'p00' to 0.75. This should result in a good solid balance but 
 <img src = "aed_sdg_high-porosity/Porosity_.png" width=33%>
 </p>
 
-With high porosity, the solid mass reconciles well but the solute mass is higher in the sediment than from the influx. The maximum mass of solute is around 350 g m$^2$. 
+With high porosity, the solid mass reconciles well but the solute mass is higher in the sediment than from the influx. The maximum mass of solute is around 350 g m<sup>-2</sup>. 
 
 <p align="center">
 <img src = "aed_sdg_high-porosity/1P_Mass_pomspecial_.png" width=50%>
@@ -103,7 +103,7 @@ Set both 'p0' and 'p00' to 0.25. This should result in a good solid balance but 
 <img src = "aed_sdg_low-porosity/Porosity_.png" width=33%>
 </p>
 
-With low porosity, as with high porosity, the solid mass reconciles well but the solute mass is higher in the sediment than from the influx. The absolute mass of solid is the same with high or low porosity, however, the maximum mass of solute is approximately 100 g m$^2$. 
+With low porosity, as with high porosity, the solid mass reconciles well but the solute mass is higher in the sediment than from the influx. The absolute mass of solid is the same with high or low porosity, however, the maximum mass of solute is approximately 100 g m<sup>-2</sup>. 
 
 <p align="center">
 <img src = "aed_sdg_low-porosity/1P_Mass_n2_.png" width=50%>
