@@ -46,7 +46,7 @@ To view the settings of GLM or CANDI-AED open the VSC file 'candi-examples_setup
 This example is generally similar to a marine sediment, based on the following settings:
 
 - low organic matter
-- marine salinity and SO_4^{2-} concentration
+- marine salinity and SO<sub>4</sub> <sup>2- </sup> concentration
 - low porosity
 - bioturbation and bioirrigation
 
