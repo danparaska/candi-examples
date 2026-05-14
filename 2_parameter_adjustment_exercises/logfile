@@ -1,801 +1,0 @@
-
-     Reading configuration from glm3.nml
-     NOTE: values for crest_elev not provided, assuming max elevation, H[bsn]
-     VolAtCrest= 322007.40932; MaxVol= 322007.40932 (m3)
-     'sediment' section present, simulating sediment heating
-     'wq_setup': split_factor 1 mobility_off 0 bioshade_feedback 1 repair_state 1 ode_method 1 benthic_mode 2 do_plots 0
-     
-    -------------------------------------------------------
-    |  General Lake Model (GLM)   Version 3.3.1           |
-    -------------------------------------------------------
-     
-     glm built using gcc version 13.2.0
-
-     nDays= 2000; timestep= 3600.000000 (s)
-     Maximum lake depth is 9.300000
-     Depth where flow will occur over the crest is 9.300000
-       *sed_temp_mean[0] =   12.00000
-     glm_aed built using gfortran version           13 .           2 .           0
-     libaed enabled.... init_glm_aed processing: aed_sdg/aed.nml
-
-     ---------- AED config : start ----------
-     libaed-water version 2.1.3
-     libaed built using gfortran version           13 .           2 .           0
-     libaed-ben version 2.1.3
-     libaed built using gfortran version           13 .           2 .           0
-     libaed-demo version 2.1.3
-     libaed built using gfortran version           13 .           2 .           0
-     libaed-riparian version 2.1.3
-     libaed built using gfortran version           13 .           2 .           0
-     libaed-lighting version 2.1.3
-     libaed built using gfortran version           13 .           2 .           0
-     libaed-dev version 2.1.3
-     libaed built using gfortran version           13 .           2 .           0
-      Processing aed_models config from aed_sdg/aed.nml
-         aed_sedflux configuration
-           ******************************* 
-           module aed_sedflux : configured for zone_averaging 
-           ******************************* 
-         aed_tracer configuration
-           ******************************* 
-           module aed_tracer : configured for zone_averaging 
-           ******************************* 
-         aed_noncohesive configuration
-           ******************************* 
-           module aed_noncohesive : configured for zone_averaging 
-           ******************************* 
-         aed_oxygen configuration
-           ******************************* 
-           module aed_oxygen : configured for zone_averaging 
-           ******************************* 
-         aed_carbon configuration
-           ******************************* 
-           module aed_carbon : configured for zone_averaging 
-           ******************************* 
-         aed_silica configuration
-           ******************************* 
-           module aed_silica : configured for zone_averaging 
-           ******************************* 
-         aed_nitrogen configuration
-           ******************************* 
-           module aed_nitrogen : configured for zone_averaging 
-           ******************************* 
-         aed_phosphorus configuration
-           ******************************* 
-           module aed_phosphorus : configured for zone_averaging 
-           ******************************* 
-         aed_organic_matter configuration
-           ******************************* 
-           module aed_organic_matter : configured for zone_averaging 
-           ******************************* 
-         aed_phytoplankton configuration
- nml format parameter file is deprecated. Please update to CSV format
-           Solving temperature functions for phytoplankton - 
-            using the form : f(T) = v^(T-20)-v^(k(T-a))+b
-           ******************************* 
-           module aed_phytoplankton : configured for zone_averaging 
-           ******************************* 
-         aed_totals configuration
-           ******************************* 
-           module aed_totals : configured for zone_averaging 
-           ******************************* 
-         aed_seddiagenesis configuration
-           NOTE : SDG IS UNDER DEVELOPMENT ... 
-            n_zones active           1
-            read variable names from : aed_sdg/aed_sdg_vars.csv
-            zone index in the allocation do loop ...           1
-            Configuring SDG model "CANDI-AED" ...
-            Calling read_sed_candi_params with            1           1
-            candi params read from file : aed_sdg/aed_candi_params.csv
-            poreflux :    0.0000000000000000     
-            Num sediment biogeochemical variables =          35
-            calling ConfigureCANDI for zone:            1
-             **************************************
-             nCANDIVarsToSim          38
-             nSpecies          38
-             nSedCols          38
-             OMModel is ...            0
-Access is denied.
-Access is denied.
-        Prescribed bottom water condition / flux varying in time 
-         ...> read from aed_sediment_swibc.dat 
-             candi col oxy          20
-             candi col nit          15
-             candi col so4          28
-             candi col frp          10
-             candi col amm           0
-             candi col ch4           3
-             candi col h2s          11
-             candi col dic           4
-             candi col salinity          27
- candi%Salty          27
-             candi col temp          -1
-             candi col mpb          12
-             candi col n2          13
-             candi col n2o          14
-             candi col no2          16
-             candi col poml          24
-             candi col pomr          25
-             candi col pomspecial          26
-             candi col mno2a          18
-             candi col mno2b          19
-             candi col feoh3a           6
-             candi col feoh3b           7
-             candi col mnii          17
-             candi col mniv          -1
-             candi col feii           5
-             candi col feiii          -1
-             candi col Feads          -1
-             candi col Mnads          -1
-             candi col fes           8
-             candi col fes2           9
-             candi col pip          22
-             candi col pipvr          23
-             candi col pin          21
-             candi col ca           1
-             candi col caco3           2
-             candi col feco3          -1
-             candi col mnco3          -1
-        CANDI set with custom (HCHB) grid size with depth
-
-        AED Sediment Diagenesis Model Configuration: 
-         --- CANDI-AED v1.0 --- 
-          Refractory OM,             simRefOM   : F
-          Mn and Fe,                 simMnFe    : T
-          FeS and FeS2,              simFeS     : T
-          Calcite,                   simCaCO3   : T
-          Siderite,                  simFeCO3   : T
-          Rhodchrosite,              simMnCO3   : T
-          Trace metal species,       simX       : F
-          Metal sulfide,             simXS      : F
-          Biologically active metal, simXO      : F
-          PO4 and NH4 asdsorption,   simAdsp    : T
-          C12 fraction,              simC12     : F
-          Mn/Fe in CaCO3,            simCaXCO3  : F
-          C12 calcite fraction,      simCaCO3C12: F
-          Tracer/Inactive component, simTracer  : T, 11
-          Kinetic Reaction Mode,     rxn_mode   :   0
-
-          OM Model                   OMModel      : 1
-          FBIO                       FBIOswitch   : 1
-          FT                         FTswitch     : 1
-          fancyN                     fancyNswitch : 1
-          FTem                       FTemswitch   : 2
-          FIN                        FINswitch    : 2
-          FIn O2 only                FInO2OnlySwitch:2
-          FOM                        FOMswitch    : 1
-          OM Approach                OMapproach   : 1
-
-          Bacteria solid?            Bsolid       : 1
-
-          Compulsory variables       mainmod    : 8
-          OM phases involved         kgmod      :  3
-          Mn and Fe                  mnfemod    :  8
-          FeSmod                     fesmod     :  2
-          Phosphate                  po4smod    :  3
-          Calcite                    caco3      :  2
-          Siderite                   feco3mod   :  1
-          Rhodchrosite               mnco3      :  1
-          Non-reactive species       tracermod  : 11
-          Reactive species          nNonTracers : 27
-          Total species              nSpecies   : 38
-          Does tracermod + nNonTracers = nSpecies?
-
-
-         Configuration Successful 
-             **************************************
-            nsedcols, endSedCol          38          37
-   Diss Names:           1 'NH4'
-   Diss Names:           2 'Ca'
-   Diss Names:           3 'CH4'
-   Diss Names:           4 'DIC'
-   Diss Names:           5 'FeII'
-   Diss Names:           6 'PO4'
-   Diss Names:           7 'H2S'
-   Diss Names:           8 'NO3'
-   Diss Names:           9 'MnII'
-   Diss Names:          10 'SO4'
-   Diss Names:          11 'pH'
-   Diss Names:          12 'pe'
-   Diss Names:          13 'ubalchg'
-   Part Names:           1 'CaCO3'
-   Part Names:           2 'FeOH3A'
-   Part Names:           3 'FeOH3B'
-   Part Names:           4 'FeS'
-   Part Names:           5 'FeS2'
-   Part Names:           6 'MnO2A'
-   Part Names:           7 'MnO2B'
-   Aqueous Species List: ----------
- --------------------------------
-
------------------------------------------------
-GEOCHEMISTRY CONFIGURATION
-
- Prinicipal components being simulated:
-                    Name        Charge  MolWeight(g/mol)
-     #  1:         NH4+ (  NH4)       1    14.007
-     #  2:         Ca+2 (   Ca)       2    40.080
-     #  3:          CH4 (  CH4)       0    12.011
-     #  4:        CO3-2 (  DIC)      -2    12.011
-     #  5:         Fe+2 ( FeII)       2    55.847
-     #  6:        PO4-3 (  PO4)      -3    30.974
-     #  7:          H2S (  H2S)       0    32.064
-     #  8:         NO3- (  NO3)      -1    14.007
-     #  9:         Mn+2 ( MnII)       2    54.938
-     # 10:        SO4-2 (  SO4)      -2    96.062
-
- Compulsory components being simulated:
-                    Name
-     # 11:    IONSTNGTH ( IONSTNGTH)
-     # 12:    ACTIVYH2O ( ACTIVYH2O)
-     # 13:    CHARGEBAL (        pH)
-     # 14:    MASSHYDGN (        pe)
-     # 15:    MASSOXYGN ( MASSOXYGN)
-
- Pure phases being simulated:
-                    Name             logK(25C) deltaH(kj/mol) settlingVel(m/s)
-     # 16:      Calcite (     CaCO3)       -8.000     -9.610   ********
-     # 17:       FeOH3A (    FeOH3A)        4.891      0.000   ********
-     # 18:       FeOH3B (    FeOH3B)       -1.000      0.000   ********
-     # 19:          FeS (       FeS)      -10.909      0.000   ********
-     # 20:         FeS2 (      FeS2)       -3.915      0.000   ********
-     # 21:        MnO2A (     MnO2A)        3.601      0.000   ********
-     # 22:        MnO2B (     MnO2B)        3.601      0.000   ********
-
- Aqueous species being simulated (dynamically 
-      determined from available components): 
-                  Name Charge  logK(25C)  deltaH(kj/mol)
-     #  1:          H+       1   0.000     0.000
-     #  2:          e-      -1   0.000     0.000
-     #  3:         H2O       0   0.000     0.000
-     #  4:       CO3-2      -2   0.000     0.000
-     #  5:        Ca+2       2   0.000     0.000
-     #  6:         CH4       0   0.000     0.000
-     #  7:         H2S       0   0.000     0.000
-     #  8:        Fe+2       2   0.000     0.000
-     #  9:        Mn+2       2   0.000     0.000
-     # 10:        NO3-      -1   0.000     0.000
-     # 11:        NH4+       1   0.000     0.000
-     # 12:       PO4-3      -3   0.000     0.000
-     # 13:       SO4-2      -2   0.000     0.000
-     # 14:       FeOH+       1  -9.500    55.229
-     # 15:    Fe(OH)3-      -1 -31.000   126.775
-     # 16:       FeSO4       0   2.250    13.514
-     # 17:      HPO4-2      -2  12.346   -14.770
-     # 18:      H2PO4-      -1  19.553   -18.912
-     # 19:       CaSO4       0   2.300     6.904
-     # 20:         NH3       0  -9.252    52.216
-     # 21:      CaHPO4       0  15.085    13.807
-     # 22:         CO2       0  16.681   -24.008
-     # 23:       HCO3-      -1  10.329   -14.912
-     # 24:       CaOH+       1 -12.780     0.000
-     # 25:     CaHCO3+       1  11.435    11.255
-     # 26:       CaCO3       0   3.224    14.832
-     # 27:       HSO4-      -1   1.988    16.108
-     # 28:         HS-      -1  -6.994    22.175
-     # 29:         S-2      -2 -19.912    50.626
-     # 30:          O2       0 -86.080   563.961
-     # 31:          H2       0  -3.150    -7.360
-     # 32:     Fe(OH)2       0 -20.570   119.516
-     # 33:    FeH2PO4+       1  22.253     0.000
-     # 34:      CaPO4-      -1   6.459    12.970
-     # 35:    CaH2PO4+       1  20.961    14.226
-     # 36:     NH4SO4-      -1   1.110     0.000
-     # 37:      FeHPO4       0  23.153     0.000
-     # 38:     FeHSO4+       1   3.068     0.000
-     # 39:         OH-      -1 -14.000    55.907
-     # 40:     CaHSO4+       1   3.068     0.000
-     # 41:       MnOH+       1 -10.590    60.250
-     # 42:    Mn(OH)3-      -1 -34.800     0.000
-     # 43:       MnSO4       0   2.250    14.100
-     # 44:    Mn(NO3)2       0   0.600    -1.657
-     # 45:     MnHCO3+       1  12.279     0.000
-     # 46:     FeHCO3+       1  12.329     0.000
-     # 47:       FeCO3       0   4.380     0.000
-     # 48:       MnCO3       0   4.900     0.000
-        Num vars for Eq solver =   13    7
- dcolmap           0           1           3           4           5          10          11          15          17          28          35          36          37
- pcolmap           2           6           7           8           9          18          19
- zone            2
-        Prescribed particulate fluxes set from aed_sediment_swibc.dat ... 
- Reading file aed_sdg/swibc.dat with            1  zones
- status post,           0
- headings1 timestep                                                        time                                                            pomspecial                                                      w00h00                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
- forzone            0           0           1           1        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234        1234
- swibc    1.0000000000000000        0.0000000000000000        1.0000000000000000E-008   1.0000000000000000        1.0000000000000000        0.0000000000000000        1.0000000000000000E-008   1.0000000000000000        2.0000000000000000        1.0000000000000000        1.0000000000000000E-008   1.0000000000000000        3.0000000000000000        25.000000000000000        1.0000000000000000        1.0000000000000000        4.0000000000000000        50.000000000000000        1.0000000000000000E-008   1.0000000000000000        5.0000000000000000        100.00000000000000        10.000000000000000        1.0000000000000000        6.0000000000000000        150.00000000000000        50.000000000000000        1.0000000000000000        7.0000000000000000        200.00000000000000        100.00000000000000        1.0000000000000000        8.0000000000000000        250.00000000000000        500.00000000000000        1.0000000000000000        9.0000000000000000        300.00000000000000        1000.0000000000000        1.0000000000000000        10.000000000000000        350.00000000000000        100.00000000000000        1.0000000000000000        11.000000000000000        400.00000000000000        50.000000000000000        1.0000000000000000        12.000000000000000        450.00000000000000        10.000000000000000        1.0000000000000000        13.000000000000000        500.00000000000000        5.0000000000000000        1.0000000000000000        14.000000000000000        600.00000000000000        1.0000000000000000        1.0000000000000000        15.000000000000000        650.00000000000000        1.0000000000000000        1.0000000000000000        16.000000000000000        700.00000000000000        1.0000000000000000        1.0000000000000000        17.000000000000000        750.00000000000000        1.0000000000000000        1.0000000000000000        18.000000000000000        800.00000000000000        1.0000000000000000        1.0000000000000000        19.000000000000000        850.00000000000000        1.0000000000000000        1.0000000000000000        20.000000000000000        900.00000000000000        1.0000000000000000        1.0000000000000000        21.000000000000000        950.00000000000000        1.0000000000000000        1.0000000000000000        22.000000000000000        1000.0000000000000        1.0000000000000000        1.0000000000000000        23.000000000000000        1050.0000000000000        10.000000000000000        1.0000000000000000        24.000000000000000        1100.0000000000000        500.00000000000000        1.0000000000000000     
- zonestart            3
- zoneend            4
-  ->n_zones,ncols,ntimes           1           4          40
- bctime end aed_swi_input    0.0000000000000000        0.0000000000000000        1.0000000000000000        25.000000000000000        50.000000000000000        100.00000000000000        150.00000000000000        200.00000000000000        250.00000000000000        300.00000000000000        350.00000000000000        400.00000000000000        450.00000000000000        500.00000000000000        600.00000000000000        650.00000000000000        700.00000000000000        750.00000000000000        800.00000000000000        850.00000000000000     
-
-  ---------------------- AED Variables Summary ----------------------
- Var name           | Module           | Type | ID | Usage (ie who linked to me)
-
- ENVIRONMENT:
- temperature          ???                 3D   ---   TRC, NCS, OXY, CAR, SIL,
-                                                    NIT, PHS, OGM, PHY, SDG
- salinity             ???                 3D   ---   TRC, NCS, OXY, CAR, NIT,
-                                                    PHS, OGM, PHY, SDG
- density              ???                 3D   ---   OGM, PHY
- layer_ht             ???                 3D   ---   OXY, CAR, PHS, OGM, PHY
- layer_area           ???                 2D   ---   OXY
- rain                 ???                 2D   ---
- extc_coef            ???                 3D   ---   CAR, OGM, PHY, TOT
- tss                  ???                 3D   ---
- cell_vel             ???                 2D   ---   SDG
- nir                  ???                 3D   ---
- par                  ???                 3D   ---   CAR, OGM, PHY, TOT, SDG
- uva                  ???                 3D   ---   OGM
- uvb                  ???                 3D   ---   OGM
- pressure             ???                 3D   ---
- depth                ???                 3D   ---   CAR
- sed_zone             ???                 2D   ---   SDF, PHY, SDG
- wind_speed           ???                 2D   ---   OXY, CAR
- par_sf               ???                 2D   ---   PHY
- taub                 ???                 2D   ---   SDG
- air_temp             ???                 2D   ---
- humidity             ???                 2D   ---
- col_depth            ???                 2D   ---   SDG
- longitude            ???                 2D   ---
- latitude             ???                 2D   ---
- yearday              ???                 2D   ---
- timestep             ???                 2D   ---
- air_pres             ???                 2D   ---
-
- STATE:
- TRC_tr1              aed_tracer          3D   TRC
- TRC_age              aed_tracer          3D   TRC
- NCS_ss1              aed_noncohesive     3D   NCS
- NCS_ss1_sed          aed_noncohesive     SZ   NCS
- OXY_oxy              aed_oxygen          3D   OXY   CAR, SIL, NIT, PHS, OGM, PHY
- CAR_dic              aed_carbon          3D   CAR   OGM, PHY
- CAR_pH               aed_carbon          3D   CAR
- CAR_ch4              aed_carbon          3D   CAR
- SIL_rsi              aed_silica          3D   SIL   PHY
- NIT_amm              aed_nitrogen        3D   NIT   OGM, PHY, TOT
- NIT_nit              aed_nitrogen        3D   NIT   OGM, PHY, TOT
- PHS_frp              aed_phosphorus      3D   PHS   OGM, PHY, TOT
- OGM_doc              aed_organic_matter  3D   OGM   PHY, TOT
- OGM_poc              aed_organic_matter  3D   OGM   PHY, TOT
- OGM_don              aed_organic_matter  3D   OGM   PHY, TOT
- OGM_pon              aed_organic_matter  3D   OGM   PHY, TOT
- OGM_dop              aed_organic_matter  3D   OGM   PHY, TOT
- OGM_pop              aed_organic_matter  3D   OGM   PHY, TOT
- OGM_docr             aed_organic_matter  3D   OGM   TOT
- OGM_donr             aed_organic_matter  3D   OGM   TOT
- OGM_dopr             aed_organic_matter  3D   OGM   TOT
- OGM_cpom             aed_organic_matter  3D   OGM   TOT
- PHY_cyano            aed_phytoplankton   3D   PHY
- PHY_green            aed_phytoplankton   3D   PHY
- PHY_diatom           aed_phytoplankton   3D   PHY
-
- DIAGNOSTIC:
- SDF_Fsed_oxy         aed_sedflux         SZ   SDF   OXY
- SDF_Fsed_ch4         aed_sedflux         SZ   SDF   CAR
- SDF_Fsed_amm         aed_sedflux         SZ   SDF   NIT
- SDF_Fsed_nit         aed_sedflux         SZ   SDF   NIT
- SDF_Fsed_frp         aed_sedflux         SZ   SDF   PHS
- TRC_tr1_vvel         aed_tracer          3D   TRC
- NCS_ss1_vvel         aed_noncohesive     3D   NCS
- NCS_ss1_set          aed_noncohesive     3D   NCS
- NCS_ss_sed           aed_noncohesive     SZ   NCS
- NCS_set              aed_noncohesive     3D   NCS
- NCS_swi              aed_noncohesive     SZ   NCS
- NCS_swi_dz           aed_noncohesive     SZ   NCS
- OXY_sat              aed_oxygen          3D   OXY
- OXY_oxy_dsf          aed_oxygen          SZ   OXY
- OXY_oxy_atm          aed_oxygen          SZ   OXY
- OXY_oxy_dsfv         aed_oxygen          3D   OXY
- OXY_oxy_atmv         aed_oxygen          3D   OXY
- CAR_pCO2             aed_carbon          3D   CAR
- CAR_sed_dic          aed_carbon          SZ   CAR
- CAR_atm_co2_flux     aed_carbon          SZ   CAR
- CAR_ch4ox            aed_carbon          3D   CAR
- CAR_ch4_dsf          aed_carbon          SZ   CAR
- CAR_ch4_atm          aed_carbon          SZ   CAR
- SIL_dsf_rsi          aed_silica          SZ   SIL
- NIT_amm_dsf          aed_nitrogen        SZ   NIT
- NIT_nit_dsf          aed_nitrogen        SZ   NIT
- NIT_nitrif           aed_nitrogen        3D   NIT
- NIT_denit            aed_nitrogen        3D   NIT
- NIT_anammox          aed_nitrogen        3D   NIT
- NIT_dnra             aed_nitrogen        3D   NIT
- PHS_frp_dsf          aed_phosphorus      SZ   PHS
- OGM_poc_set          aed_organic_matter  3D   OGM
- OGM_cpom_set         aed_organic_matter  3D   OGM
- OGM_pon_set          aed_organic_matter  3D   OGM
- OGM_pop_set          aed_organic_matter  3D   OGM
- OGM_cdom             aed_organic_matter  3D   OGM
- OGM_toc_sed          aed_organic_matter  SZ   OGM
- OGM_ton_sed          aed_organic_matter  SZ   OGM
- OGM_top_sed          aed_organic_matter  SZ   OGM
- OGM_poc_swi          aed_organic_matter  SZ   OGM
- OGM_doc_swi          aed_organic_matter  SZ   OGM
- OGM_pon_swi          aed_organic_matter  SZ   OGM
- OGM_don_swi          aed_organic_matter  SZ   OGM
- OGM_pop_swi          aed_organic_matter  SZ   OGM
- OGM_dop_swi          aed_organic_matter  SZ   OGM
- OGM_poc_res          aed_organic_matter  SZ   OGM
- OGM_pon_res          aed_organic_matter  SZ   OGM
- OGM_pop_res          aed_organic_matter  SZ   OGM
- OGM_poc_hyd          aed_organic_matter  3D   OGM
- OGM_pon_hyd          aed_organic_matter  3D   OGM
- OGM_pop_hyd          aed_organic_matter  3D   OGM
- OGM_doc_min          aed_organic_matter  3D   OGM
- OGM_don_min          aed_organic_matter  3D   OGM
- OGM_dop_min          aed_organic_matter  3D   OGM
- OGM_doc_anaerobic    aed_organic_matter  3D   OGM
- OGM_doc_denit        aed_organic_matter  3D   OGM
- OGM_docr_min         aed_organic_matter  3D   OGM
- OGM_donr_min         aed_organic_matter  3D   OGM
- OGM_dopr_min         aed_organic_matter  3D   OGM
- OGM_cpom_bdown       aed_organic_matter  3D   OGM
- OGM_bod5             aed_organic_matter  3D   OGM
- OGM_pom_vvel         aed_organic_matter  3D   OGM
- OGM_cpom_vvel        aed_organic_matter  3D   OGM
- PHY_cyano_NtoP       aed_phytoplankton   3D   PHY
- PHY_cyano_fI         aed_phytoplankton   3D   PHY
- PHY_cyano_fNit       aed_phytoplankton   3D   PHY
- PHY_cyano_fPho       aed_phytoplankton   3D   PHY
- PHY_cyano_fSil       aed_phytoplankton   3D   PHY
- PHY_cyano_fT         aed_phytoplankton   3D   PHY
- PHY_cyano_fSal       aed_phytoplankton   3D   PHY
- PHY_cyano_gpp_c      aed_phytoplankton   3D   PHY
- PHY_cyano_rsp_c      aed_phytoplankton   3D   PHY
- PHY_cyano_exc_c      aed_phytoplankton   3D   PHY
- PHY_cyano_mor_c      aed_phytoplankton   3D   PHY
- PHY_cyano_set_c      aed_phytoplankton   3D   PHY
- PHY_cyano_gpp_n      aed_phytoplankton   3D   PHY
- PHY_cyano_rsp_n      aed_phytoplankton   3D   PHY
- PHY_cyano_exc_n      aed_phytoplankton   3D   PHY
- PHY_cyano_mor_n      aed_phytoplankton   3D   PHY
- PHY_cyano_set_n      aed_phytoplankton   3D   PHY
- PHY_cyano_gpp_p      aed_phytoplankton   3D   PHY
- PHY_cyano_rsp_p      aed_phytoplankton   3D   PHY
- PHY_cyano_exc_p      aed_phytoplankton   3D   PHY
- PHY_cyano_mor_p      aed_phytoplankton   3D   PHY
- PHY_cyano_set_p      aed_phytoplankton   3D   PHY
- PHY_green_NtoP       aed_phytoplankton   3D   PHY
- PHY_green_fI         aed_phytoplankton   3D   PHY
- PHY_green_fNit       aed_phytoplankton   3D   PHY
- PHY_green_fPho       aed_phytoplankton   3D   PHY
- PHY_green_fSil       aed_phytoplankton   3D   PHY
- PHY_green_fT         aed_phytoplankton   3D   PHY
- PHY_green_fSal       aed_phytoplankton   3D   PHY
- PHY_green_gpp_c      aed_phytoplankton   3D   PHY
- PHY_green_rsp_c      aed_phytoplankton   3D   PHY
- PHY_green_exc_c      aed_phytoplankton   3D   PHY
- PHY_green_mor_c      aed_phytoplankton   3D   PHY
- PHY_green_set_c      aed_phytoplankton   3D   PHY
- PHY_green_gpp_n      aed_phytoplankton   3D   PHY
- PHY_green_rsp_n      aed_phytoplankton   3D   PHY
- PHY_green_exc_n      aed_phytoplankton   3D   PHY
- PHY_green_mor_n      aed_phytoplankton   3D   PHY
- PHY_green_set_n      aed_phytoplankton   3D   PHY
- PHY_green_gpp_p      aed_phytoplankton   3D   PHY
- PHY_green_rsp_p      aed_phytoplankton   3D   PHY
- PHY_green_exc_p      aed_phytoplankton   3D   PHY
- PHY_green_mor_p      aed_phytoplankton   3D   PHY
- PHY_green_set_p      aed_phytoplankton   3D   PHY
- PHY_diatom_NtoP      aed_phytoplankton   3D   PHY
- PHY_diatom_fI        aed_phytoplankton   3D   PHY
- PHY_diatom_fNit      aed_phytoplankton   3D   PHY
- PHY_diatom_fPho      aed_phytoplankton   3D   PHY
- PHY_diatom_fSil      aed_phytoplankton   3D   PHY
- PHY_diatom_fT        aed_phytoplankton   3D   PHY
- PHY_diatom_fSal      aed_phytoplankton   3D   PHY
- PHY_diatom_gpp_c     aed_phytoplankton   3D   PHY
- PHY_diatom_rsp_c     aed_phytoplankton   3D   PHY
- PHY_diatom_exc_c     aed_phytoplankton   3D   PHY
- PHY_diatom_mor_c     aed_phytoplankton   3D   PHY
- PHY_diatom_set_c     aed_phytoplankton   3D   PHY
- PHY_diatom_gpp_n     aed_phytoplankton   3D   PHY
- PHY_diatom_rsp_n     aed_phytoplankton   3D   PHY
- PHY_diatom_exc_n     aed_phytoplankton   3D   PHY
- PHY_diatom_mor_n     aed_phytoplankton   3D   PHY
- PHY_diatom_set_n     aed_phytoplankton   3D   PHY
- PHY_diatom_gpp_p     aed_phytoplankton   3D   PHY
- PHY_diatom_rsp_p     aed_phytoplankton   3D   PHY
- PHY_diatom_exc_p     aed_phytoplankton   3D   PHY
- PHY_diatom_mor_p     aed_phytoplankton   3D   PHY
- PHY_diatom_set_p     aed_phytoplankton   3D   PHY
- PHY_tphy             aed_phytoplankton   3D   PHY   TOT
- PHY_tchla            aed_phytoplankton   3D   PHY
- PHY_in               aed_phytoplankton   3D   PHY   TOT
- PHY_ip               aed_phytoplankton   3D   PHY   TOT
- PHY_gpp              aed_phytoplankton   3D   PHY
- PHY_ncp              aed_phytoplankton   3D   PHY
- PHY_upt_no3          aed_phytoplankton   3D   PHY
- PHY_upt_nh4          aed_phytoplankton   3D   PHY
- PHY_upt_n2           aed_phytoplankton   3D   PHY
- PHY_upt_po4          aed_phytoplankton   3D   PHY
- PHY_upt_dic          aed_phytoplankton   3D   PHY
- PHY_set              aed_phytoplankton   3D   PHY
- PHY_par              aed_phytoplankton   3D   PHY
- PHY_phy_swi_c        aed_phytoplankton   SZ   PHY
- PHY_phy_swi_n        aed_phytoplankton   SZ   PHY
- PHY_phy_swi_p        aed_phytoplankton   SZ   PHY
- TOT_tn               aed_totals          3D   TOT
- TOT_tp               aed_totals          3D   TOT
- TOT_toc              aed_totals          3D   TOT
- TOT_light            aed_totals          3D   TOT
- TOT_par              aed_totals          3D   TOT
- TOT_uv               aed_totals          3D   TOT
- TOT_extc             aed_totals          3D   TOT
- SDG_oxy01            aed_seddiagenesis   SZ   SDG
- SDG_amm01            aed_seddiagenesis   SZ   SDG
- SDG_docl01           aed_seddiagenesis   SZ   SDG
- SDG_docr01           aed_seddiagenesis   SZ   SDG
- SDG_swi_deff         aed_seddiagenesis   SZ   SDG
- SDG_opd              aed_seddiagenesis   SZ   SDG
- SDG_arpd             aed_seddiagenesis   SZ   SDG
- SDG_fom              aed_seddiagenesis   SZ   SDG
- SDG_burial           aed_seddiagenesis   SZ   SDG
- SDG_toc              aed_seddiagenesis   SZ   SDG
- SDG_tfe              aed_seddiagenesis   SZ   SDG
- SDG_tn               aed_seddiagenesis   SZ   SDG
- SDG_tp               aed_seddiagenesis   SZ   SDG
- SDG_ts               aed_seddiagenesis   SZ   SDG
- SDG_crs              aed_seddiagenesis   SZ   SDG
- SDG_minerl           aed_seddiagenesis   SZ   SDG
- SDG_aerobic          aed_seddiagenesis   SZ   SDG
- SDG_anaerobic        aed_seddiagenesis   SZ   SDG
- dynamic_swibc    1.0000000000000000        1.0000000000000000        2.0000000000000000        0.0000000000000000        0.0000000000000000        1.0000000000000000        1.0000000000000000E-008   1.0000000000000000E-008   1.0000000000000000E-008   1.0000000000000000        1.0000000000000000        1.0000000000000000     
-      CANDI configured OK
-           ******************************* 
-           module aed_seddiagenesis : configured for zone_averaging 
-           ******************************* 
-       ... nml file parsing completed.
-
-     AED : n_aed_vars = 236 ; MaxLayers         =  500
-     AED : n_vars      =  24 ; n_vars_ben        =   1
-     AED : n_vars_diag = 119 ; n_vars_diag_sheet =  65
-
-     Configured AED variables to simulate:
-       S(   1) water column variable     : TRC_tr1
-       S(   2) water column variable     : TRC_age
-       S(   3) water column variable     : NCS_ss1
-       S(   4) water column variable     : OXY_oxy
-       S(   5) water column variable     : CAR_dic
-       S(   6) water column variable     : CAR_pH
-       S(   7) water column variable     : CAR_ch4
-       S(   8) water column variable     : SIL_rsi
-       S(   9) water column variable     : NIT_amm
-       S(  10) water column variable     : NIT_nit
-       S(  11) water column variable     : PHS_frp
-       S(  12) water column variable     : OGM_doc
-       S(  13) water column variable     : OGM_poc
-       S(  14) water column variable     : OGM_don
-       S(  15) water column variable     : OGM_pon
-       S(  16) water column variable     : OGM_dop
-       S(  17) water column variable     : OGM_pop
-       S(  18) water column variable     : OGM_docr
-       S(  19) water column variable     : OGM_donr
-       S(  20) water column variable     : OGM_dopr
-       S(  21) water column variable     : OGM_cpom
-       S(  22) water column variable     : PHY_cyano
-       S(  23) water column variable     : PHY_green
-       S(  24) water column variable     : PHY_diatom
-       B(   1) bottom variable           + NCS_ss1_sed
-       D(   1) water column diagnostic   > TRC_tr1_vvel
-       D(   2) water column diagnostic   > NCS_ss1_vvel
-       D(   3) water column diagnostic   > NCS_ss1_set
-       D(   4) water column diagnostic   > NCS_set
-       D(   5) water column diagnostic   > OXY_sat
-       D(   6) water column diagnostic   > OXY_oxy_dsfv
-       D(   7) water column diagnostic   > OXY_oxy_atmv
-       D(   8) water column diagnostic   > CAR_pCO2
-       D(   9) water column diagnostic   > CAR_ch4ox
-       D(  10) water column diagnostic   > NIT_nitrif
-       D(  11) water column diagnostic   > NIT_denit
-       D(  12) water column diagnostic   > NIT_anammox
-       D(  13) water column diagnostic   > NIT_dnra
-       D(  14) water column diagnostic   > OGM_poc_set
-       D(  15) water column diagnostic   > OGM_cpom_set
-       D(  16) water column diagnostic   > OGM_pon_set
-       D(  17) water column diagnostic   > OGM_pop_set
-       D(  18) water column diagnostic   > OGM_cdom
-       D(  19) water column diagnostic   > OGM_poc_hyd
-       D(  20) water column diagnostic   > OGM_pon_hyd
-       D(  21) water column diagnostic   > OGM_pop_hyd
-       D(  22) water column diagnostic   > OGM_doc_min
-       D(  23) water column diagnostic   > OGM_don_min
-       D(  24) water column diagnostic   > OGM_dop_min
-       D(  25) water column diagnostic   > OGM_doc_anaerobic
-       D(  26) water column diagnostic   > OGM_doc_denit
-       D(  27) water column diagnostic   > OGM_docr_min
-       D(  28) water column diagnostic   > OGM_donr_min
-       D(  29) water column diagnostic   > OGM_dopr_min
-       D(  30) water column diagnostic   > OGM_cpom_bdown
-       D(  31) water column diagnostic   > OGM_bod5
-       D(  32) water column diagnostic   > OGM_pom_vvel
-       D(  33) water column diagnostic   > OGM_cpom_vvel
-       D(  34) water column diagnostic   > PHY_cyano_NtoP
-       D(  35) water column diagnostic   > PHY_cyano_fI
-       D(  36) water column diagnostic   > PHY_cyano_fNit
-       D(  37) water column diagnostic   > PHY_cyano_fPho
-       D(  38) water column diagnostic   > PHY_cyano_fSil
-       D(  39) water column diagnostic   > PHY_cyano_fT
-       D(  40) water column diagnostic   > PHY_cyano_fSal
-       D(  41) water column diagnostic   > PHY_cyano_gpp_c
-       D(  42) water column diagnostic   > PHY_cyano_rsp_c
-       D(  43) water column diagnostic   > PHY_cyano_exc_c
-       D(  44) water column diagnostic   > PHY_cyano_mor_c
-       D(  45) water column diagnostic   > PHY_cyano_set_c
-       D(  46) water column diagnostic   > PHY_cyano_gpp_n
-       D(  47) water column diagnostic   > PHY_cyano_rsp_n
-       D(  48) water column diagnostic   > PHY_cyano_exc_n
-       D(  49) water column diagnostic   > PHY_cyano_mor_n
-       D(  50) water column diagnostic   > PHY_cyano_set_n
-       D(  51) water column diagnostic   > PHY_cyano_gpp_p
-       D(  52) water column diagnostic   > PHY_cyano_rsp_p
-       D(  53) water column diagnostic   > PHY_cyano_exc_p
-       D(  54) water column diagnostic   > PHY_cyano_mor_p
-       D(  55) water column diagnostic   > PHY_cyano_set_p
-       D(  56) water column diagnostic   > PHY_green_NtoP
-       D(  57) water column diagnostic   > PHY_green_fI
-       D(  58) water column diagnostic   > PHY_green_fNit
-       D(  59) water column diagnostic   > PHY_green_fPho
-       D(  60) water column diagnostic   > PHY_green_fSil
-       D(  61) water column diagnostic   > PHY_green_fT
-       D(  62) water column diagnostic   > PHY_green_fSal
-       D(  63) water column diagnostic   > PHY_green_gpp_c
-       D(  64) water column diagnostic   > PHY_green_rsp_c
-       D(  65) water column diagnostic   > PHY_green_exc_c
-       D(  66) water column diagnostic   > PHY_green_mor_c
-       D(  67) water column diagnostic   > PHY_green_set_c
-       D(  68) water column diagnostic   > PHY_green_gpp_n
-       D(  69) water column diagnostic   > PHY_green_rsp_n
-       D(  70) water column diagnostic   > PHY_green_exc_n
-       D(  71) water column diagnostic   > PHY_green_mor_n
-       D(  72) water column diagnostic   > PHY_green_set_n
-       D(  73) water column diagnostic   > PHY_green_gpp_p
-       D(  74) water column diagnostic   > PHY_green_rsp_p
-       D(  75) water column diagnostic   > PHY_green_exc_p
-       D(  76) water column diagnostic   > PHY_green_mor_p
-       D(  77) water column diagnostic   > PHY_green_set_p
-       D(  78) water column diagnostic   > PHY_diatom_NtoP
-       D(  79) water column diagnostic   > PHY_diatom_fI
-       D(  80) water column diagnostic   > PHY_diatom_fNit
-       D(  81) water column diagnostic   > PHY_diatom_fPho
-       D(  82) water column diagnostic   > PHY_diatom_fSil
-       D(  83) water column diagnostic   > PHY_diatom_fT
-       D(  84) water column diagnostic   > PHY_diatom_fSal
-       D(  85) water column diagnostic   > PHY_diatom_gpp_c
-       D(  86) water column diagnostic   > PHY_diatom_rsp_c
-       D(  87) water column diagnostic   > PHY_diatom_exc_c
-       D(  88) water column diagnostic   > PHY_diatom_mor_c
-       D(  89) water column diagnostic   > PHY_diatom_set_c
-       D(  90) water column diagnostic   > PHY_diatom_gpp_n
-       D(  91) water column diagnostic   > PHY_diatom_rsp_n
-       D(  92) water column diagnostic   > PHY_diatom_exc_n
-       D(  93) water column diagnostic   > PHY_diatom_mor_n
-       D(  94) water column diagnostic   > PHY_diatom_set_n
-       D(  95) water column diagnostic   > PHY_diatom_gpp_p
-       D(  96) water column diagnostic   > PHY_diatom_rsp_p
-       D(  97) water column diagnostic   > PHY_diatom_exc_p
-       D(  98) water column diagnostic   > PHY_diatom_mor_p
-       D(  99) water column diagnostic   > PHY_diatom_set_p
-       D( 100) water column diagnostic   > PHY_tphy
-       D( 101) water column diagnostic   > PHY_tchla
-       D( 102) water column diagnostic   > PHY_in
-       D( 103) water column diagnostic   > PHY_ip
-       D( 104) water column diagnostic   > PHY_gpp
-       D( 105) water column diagnostic   > PHY_ncp
-       D( 106) water column diagnostic   > PHY_upt_no3
-       D( 107) water column diagnostic   > PHY_upt_nh4
-       D( 108) water column diagnostic   > PHY_upt_n2
-       D( 109) water column diagnostic   > PHY_upt_po4
-       D( 110) water column diagnostic   > PHY_upt_dic
-       D( 111) water column diagnostic   > PHY_set
-       D( 112) water column diagnostic   > PHY_par
-       D( 113) water column diagnostic   > TOT_tn
-       D( 114) water column diagnostic   > TOT_tp
-       D( 115) water column diagnostic   > TOT_toc
-       D( 116) water column diagnostic   > TOT_light
-       D( 117) water column diagnostic   > TOT_par
-       D( 118) water column diagnostic   > TOT_uv
-       D( 119) water column diagnostic   > TOT_extc
-       D(   1) bottom/surface diagnostic ~ SDF_Fsed_oxy
-       D(   2) bottom/surface diagnostic ~ SDF_Fsed_ch4
-       D(   3) bottom/surface diagnostic ~ SDF_Fsed_amm
-       D(   4) bottom/surface diagnostic ~ SDF_Fsed_nit
-       D(   5) bottom/surface diagnostic ~ SDF_Fsed_frp
-       D(   6) bottom/surface diagnostic ~ NCS_ss_sed
-       D(   7) bottom/surface diagnostic ~ NCS_swi
-       D(   8) bottom/surface diagnostic ~ NCS_swi_dz
-       D(   9) bottom/surface diagnostic ~ OXY_oxy_dsf
-       D(  10) bottom/surface diagnostic ~ OXY_oxy_atm
-       D(  11) bottom/surface diagnostic ~ CAR_sed_dic
-       D(  12) bottom/surface diagnostic ~ CAR_atm_co2_flux
-       D(  13) bottom/surface diagnostic ~ CAR_ch4_dsf
-       D(  14) bottom/surface diagnostic ~ CAR_ch4_atm
-       D(  15) bottom/surface diagnostic ~ SIL_dsf_rsi
-       D(  16) bottom/surface diagnostic ~ NIT_amm_dsf
-       D(  17) bottom/surface diagnostic ~ NIT_nit_dsf
-       D(  18) bottom/surface diagnostic ~ PHS_frp_dsf
-       D(  19) bottom/surface diagnostic ~ OGM_toc_sed
-       D(  20) bottom/surface diagnostic ~ OGM_ton_sed
-       D(  21) bottom/surface diagnostic ~ OGM_top_sed
-       D(  22) bottom/surface diagnostic ~ OGM_poc_swi
-       D(  23) bottom/surface diagnostic ~ OGM_doc_swi
-       D(  24) bottom/surface diagnostic ~ OGM_pon_swi
-       D(  25) bottom/surface diagnostic ~ OGM_don_swi
-       D(  26) bottom/surface diagnostic ~ OGM_pop_swi
-       D(  27) bottom/surface diagnostic ~ OGM_dop_swi
-       D(  28) bottom/surface diagnostic ~ OGM_poc_res
-       D(  29) bottom/surface diagnostic ~ OGM_pon_res
-       D(  30) bottom/surface diagnostic ~ OGM_pop_res
-       D(  31) bottom/surface diagnostic ~ PHY_phy_swi_c
-       D(  32) bottom/surface diagnostic ~ PHY_phy_swi_n
-       D(  33) bottom/surface diagnostic ~ PHY_phy_swi_p
-       D(  34) bottom/surface diagnostic ~ SDG_oxy01
-       D(  35) bottom/surface diagnostic ~ SDG_amm01
-       D(  36) bottom/surface diagnostic ~ SDG_docl01
-       D(  37) bottom/surface diagnostic ~ SDG_docr01
-       D(  38) bottom/surface diagnostic ~ SDG_swi_deff
-       D(  39) bottom/surface diagnostic ~ SDG_opd
-       D(  40) bottom/surface diagnostic ~ SDG_arpd
-       D(  41) bottom/surface diagnostic ~ SDG_fom
-       D(  42) bottom/surface diagnostic ~ SDG_burial
-       D(  43) bottom/surface diagnostic ~ SDG_toc
-       D(  44) bottom/surface diagnostic ~ SDG_tfe
-       D(  45) bottom/surface diagnostic ~ SDG_tn
-       D(  46) bottom/surface diagnostic ~ SDG_tp
-       D(  47) bottom/surface diagnostic ~ SDG_ts
-       D(  48) bottom/surface diagnostic ~ SDG_crs
-       D(  49) bottom/surface diagnostic ~ SDG_minerl
-       D(  50) bottom/surface diagnostic ~ SDG_aerobic
-       D(  51) bottom/surface diagnostic ~ SDG_anaerobic
-       D(  52) bottom/surface diagnostic ~ SDG_denit
-       D(  53) bottom/surface diagnostic ~ SDG_mnred
-       D(  54) bottom/surface diagnostic ~ SDG_fered
-       D(  55) bottom/surface diagnostic ~ SDG_so4red
-       D(  56) bottom/surface diagnostic ~ SDG_methan
-       D(  57) bottom/surface diagnostic ~ SDG_bpp
-       D(  58) bottom/surface diagnostic ~ SDG_biodepth
-       D(  59) bottom/surface diagnostic ~ SDG_porosity
-       D(  60) bottom/surface diagnostic ~ SDG_steadiness
-       D(  61) bottom/surface diagnostic ~ SDG_error
-       D(  62) bottom/surface diagnostic ~ SDG_c_swi
-     WQ plugin active: included Num_WQ_Vars = 24
- SDG_denit            aed_seddiagenesis   SZ   SDG
- SDG_mnred            aed_seddiagenesis   SZ   SDG
- SDG_fered            aed_seddiagenesis   SZ   SDG
- SDG_so4red           aed_seddiagenesis   SZ   SDG
- SDG_methan           aed_seddiagenesis   SZ   SDG
- SDG_bpp              aed_seddiagenesis   SZ   SDG
- SDG_biodepth         aed_seddiagenesis   SZ   SDG
- SDG_porosity         aed_seddiagenesis   SZ   SDG
- SDG_steadiness       aed_seddiagenesis   SZ   SDG
- SDG_error            aed_seddiagenesis   SZ   SDG
- SDG_c_swi            aed_seddiagenesis   SZ   SDG
- SDG_n_swi            aed_seddiagenesis   SZ   SDG
- SDG_p_swi            aed_seddiagenesis   SZ   SDG
- SDG_deltan           aed_seddiagenesis   SZ   SDG
-
-  -------------------------------------------------------------------
-
-       D(  63) bottom/surface diagnostic ~ SDG_n_swi
-       D(  64) bottom/surface diagnostic ~ SDG_p_swi
-       D(  65) bottom/surface diagnostic ~ SDG_deltan
-
-     ----------  AED config : end  ----------
-
-Access is denied.
-Access is denied.
-Access is denied.
-Access is denied.
-Access is denied.
-Access is denied.
-Access is denied.
-
-     Wall clock start time :  Fri May 17 13:19:55 2024
-
-     Simulation begins...
-     Running day  2460677, 0.05% of days complete     Running day  2460678, 0.10% of days complete     Running day  2460679, 0.15% of days complete     Running day  2460680, 0.20% of days complete     Running day  2460681, 0.25% of days complete     Running day  2460682, 0.30% of days complete     Running day  2460683, 0.35% of days complete     Running day  2460684, 0.40% of days complete     Running day  2460685, 0.45% of days complete     Running day  2460686, 0.50% of days complete     Running day  2460687, 0.55% of days complete     Running day  2460688, 0.60% of days complete     Running day  2460689, 0.65% of days complete     Running day  2460690, 0.70% of days complete     Running day  2460691, 0.75% of days complete     Running day  2460692, 0.80% of days complete     Running day  2460693, 0.85% of days complete     Running day  2460694, 0.90% of days complete     Running day  2460695, 0.95% of days complete     Running day  2460696, 1.00% of days complete     Running day  2460697, 1.05% of days complete     Running day  2460698, 1.10% of days complete     Running day  2460699, 1.15% of days complete     Running day  2460700, 1.20% of days complete     Running day  2460701, 1.25% of days complete     Running day  2460702, 1.30% of days complete     Running day  2460703, 1.35% of days complete     Running day  2460704, 1.40% of days complete     Running day  2460705, 1.45% of days complete     Running day  2460706, 1.50% of days complete     Running day  2460707, 1.55% of days complete     Running day  2460708, 1.60% of days complete     Running day  2460709, 1.65% of days complete     Running day  2460710, 1.70% of days complete     Running day  2460711, 1.75% of days complete     Running day  2460712, 1.80% of days complete     Running day  2460713, 1.85% of days complete     Running day  2460714, 1.90% of days complete     Running day  2460715, 1.95% of days complete     Running day  2460716, 2.00% of days complete     Running day  2460717, 2.05% of days complete     Running day  2460718, 2.10% of days complete     Running day  2460719, 2.15% of days complete     Running day  2460720, 2.20% of days complete     Running day  2460721, 2.25% of days complete     Running day  2460722, 2.30% of days complete     Running day  2460723, 2.35% of days complete     Running day  2460724, 2.40% of days complete     Running day  2460725, 2.45% of days complete     Running day  2460726, 2.50% of days complete     Running day  2460727, 2.55% of days complete     Running day  2460728, 2.60% of days complete     Running day  2460729, 2.65% of days complete     Running day  2460730, 2.70% of days complete     Running day  2460731, 2.75% of days complete     Running day  2460732, 2.80% of days complete     Running day  2460733, 2.85% of days complete     Running day  2460734, 2.90% of days complete     Running day  2460735, 2.95% of days complete     Running day  2460736, 3.00% of days complete     Running day  2460737, 3.05% of days complete     Running day  2460738, 3.10% of days complete     Running day  2460739, 3.15% of days complete     Running day  2460740, 3.20% of days complete     Running day  2460741, 3.25% of days complete     Running day  2460742, 3.30% of days complete     Running day  2460743, 3.35% of days complete     Running day  2460744, 3.40% of days complete     Running day  2460745, 3.45% of days complete     Running day  2460746, 3.50% of days complete     Running day  2460747, 3.55% of days complete     Running day  2460748, 3.60% of days complete     Running day  2460749, 3.65% of days complete     Running day  2460750, 3.70% of days complete     Running day  2460751, 3.75% of days complete     Running day  2460752, 3.80% of days complete     Running day  2460753, 3.85% of days complete     Running day  2460754, 3.90% of days complete     Running day  2460755, 3.95% of days complete     Running day  2460756, 4.00% of days complete     Running day  2460757, 4.05% of days complete     Running day  2460758, 4.10% of days complete     Running day  2460759, 4.15% of days complete     Running day  2460760, 4.20% of days complete     Running day  2460761, 4.25% of days complete     Running day  2460762, 4.30% of days complete     Running day  2460763, 4.35% of days complete     Running day  2460764, 4.40% of days complete     Running day  2460765, 4.45% of days complete     Running day  2460766, 4.50% of days complete     Running day  2460767, 4.55% of days complete     Running day  2460768, 4.60% of days complete     Running day  2460769, 4.65% of days complete     Running day  2460770, 4.70% of days complete     Running day  2460771, 4.75% of days complete     Running day  2460772, 4.80% of days complete     Running day  2460773, 4.85% of days complete     Running day  2460774, 4.90% of days complete     Running day  2460775, 4.95% of days complete     Running day  2460776, 5.00% of days complete     Running day  2460777, 5.05% of days complete     Running day  2460778, 5.10% of days complete     Running day  2460779, 5.15% of days complete     Running day  2460780, 5.20% of days complete     Running day  2460781, 5.25% of days complete     Running day  2460782, 5.30% of days complete     Running day  2460783, 5.35% of days complete     Running day  2460784, 5.40% of days complete     Running day  2460785, 5.45% of days complete     Running day  2460786, 5.50% of days complete     Running day  2460787, 5.55% of days complete     Running day  2460788, 5.60% of days complete     Running day  2460789, 5.65% of days complete     Running day  2460790, 5.70% of days complete     Running day  2460791, 5.75% of days complete     Running day  2460792, 5.80% of days complete     Running day  2460793, 5.85% of days complete     Running day  2460794, 5.90% of days complete     Running day  2460795, 5.95% of days complete     Running day  2460796, 6.00% of days complete     Running day  2460797, 6.05% of days complete     Running day  2460798, 6.10% of days complete     Running day  2460799, 6.15% of days complete     Running day  2460800, 6.20% of days complete     Running day  2460801, 6.25% of days complete     Running day  2460802, 6.30% of days complete     Running day  2460803, 6.35% of days complete     Running day  2460804, 6.40% of days complete     Running day  2460805, 6.45% of days complete     Running day  2460806, 6.50% of days complete     Running day  2460807, 6.55% of days complete     Running day  2460808, 6.60% of days complete     Running day  2460809, 6.65% of days complete     Running day  2460810, 6.70% of days complete     Running day  2460811, 6.75% of days complete     Running day  2460812, 6.80% of days complete     Running day  2460813, 6.85% of days complete     Running day  2460814, 6.90% of days complete     Running day  2460815, 6.95% of days complete     Running day  2460816, 7.00% of days complete     Running day  2460817, 7.05% of days complete     Running day  2460818, 7.10% of days complete     Running day  2460819, 7.15% of days complete     Running day  2460820, 7.20% of days complete     Running day  2460821, 7.25% of days complete     Running day  2460822, 7.30% of days complete     Running day  2460823, 7.35% of days complete     Running day  2460824, 7.40% of days complete     Running day  2460825, 7.45% of days complete     Running day  2460826, 7.50% of days complete     Running day  2460827, 7.55% of days complete     Running day  2460828, 7.60% of days complete     Running day  2460829, 7.65% of days complete       Call initialiseCANDI for zone:     1 (    1/    1)
-           candi SedProperties 
-           candi bp =   0.59999999999999998     
-           candi p00=   0.59999999999999998     
-       CANDI initialised OK
-^C
