@@ -63,7 +63,7 @@ polygon.oxy.xx <-c(sum.7.8,rev(sum.6.7))
 
 polygon.yy <-c(rownames(linematrix.4),rev(rownames(linematrix.4)))
 
-png(filename=paste0(folder,"../../rates_stacked.png")
+png(filename=paste0(folder,"../../results/rates_stacked.png")
       ,width=widthy,height=heighty  ,res=reso,units="mm"  )
 
 par(mar=margin.list)

@@ -6,7 +6,7 @@ rates.colours<-c(
                 ,"grey80" 
 )
 
-png(filename=paste0(folder,"../../rates_C.png")
+png(filename=paste0(folder,"../../results/rates_C.png")
       ,width=widthy,height=heighty  ,res=reso,units="mm"  )
 
 par(mar=margin.list)
@@ -55,11 +55,5 @@ legend(
 
 
 dev.off()
-
- 
- 
-
-dev.off()
-
 
 

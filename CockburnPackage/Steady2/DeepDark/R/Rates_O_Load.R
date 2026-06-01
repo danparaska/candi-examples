@@ -53,11 +53,11 @@ legendmatrix<-matrix(   nrow=(length(extrafiles))
 #for (i in 1){
 source("LoadExtraSedData.R")#0 Load the flux and concentration data
 
-print(extrafiles[i])
+#print(extrafiles[i])
 source("LoadExtraSedData.R")#0 Load the flux and concentration data
 files[i]=extrafiles[i]
 source("ExtrasConcLabels.R")
-extrafiles[i]
+#extrafiles[i]
 times_y_round <- round(times_y,digits=1);times_y_round
 
 manual.legend.text<-c(paste0(times_y_round, " years")

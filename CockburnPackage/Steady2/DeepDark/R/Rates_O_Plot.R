@@ -25,7 +25,7 @@ ltysequence<-c(1,1,3,1,1,1,5)
 
 lwdsequence<-c(1,1,1,3,1,1,1)
 
-png(filename=paste0(folder,"../../rates_O.png")
+png(filename=paste0(folder,"../../results/rates_O.png")
       ,width=widthy,height=heighty  ,res=reso,units="mm"  )
 
 par(mar=margin.list)

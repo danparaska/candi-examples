@@ -13,40 +13,40 @@
      =============================================
    Definition of the fluxes: out of sediment (-) into it (+)
       Units: [umol/cm2/y]
-   Flux O2         :      814.3777040032
-   Flux O2 Theory  :      117.1515207465
-   Flux NO3        :        2.5118325670
-   Flux SO4        :       28.2001696565
-   Flux PO4        :       -8.1225459914
+   Flux O2         :      812.7710255038
+   Flux O2 Theory  :       90.2891656914
+   Flux NO3        :        2.5099549004
+   Flux SO4        :       22.1595273668
+   Flux PO4        :       -8.1273685540
    Flux PO4 Theory :       -0.0000000000
-   Flux NH4        :       -9.0874089402
-   Flux MnII       :      -61.4390158018
-   Flux FeII       :      -13.7364669705
-   Flux CH4        :       -0.0046016840
+   Flux NH4        :       -8.9435240156
+   Flux MnII       :      -62.0251435795
+   Flux FeII       :      -10.8800576857
+   Flux CH4        :       -0.0035780649
      =============================================
      Fluxes at the bottom:                        
-   Flux O2         :       -0.0008607475
-   Flux NO3        :       -0.0000053644
-   Flux SO4        :       -8.0723908344
-   Flux PO4        :       -0.0007340477
-   Flux NH4        :       -0.0003308079
-   Flux MnII       :       -0.0005010433
-   Flux FeII       :       -0.0269318298
-   Flux CH4        :       -0.0000242254
+   Flux O2         :       -0.0006388715
+   Flux NO3        :       -0.0000051560
+   Flux SO4        :       -8.0778515407
+   Flux PO4        :       -0.0009683227
+   Flux NH4        :       -0.0003617029
+   Flux MnII       :       -0.0005018105
+   Flux FeII       :       -0.0951296059
+   Flux CH4        :        0.0000025718
      =============================================
          Vertical integrated secondary redox-rates
  RNHOX                 :         0.0000000000
- RSOX                  :         0.1495075360
+ RSOX                  :         0.1005737397
  RMNOX                 :         0.0000000000
- RFEOX                 :       112.7292065350
- RMNFE                 :        19.8677743425
+ RFEOX                 :        87.0232188342
+ RMNFE                 :        19.8378178532
  RFENO3                :         0.0000000000
- RMNO2TS               :         0.6276317086
- RCH4OX                :         2.0616495697
- RCH4SO4               :         0.0684639310
+ RMNO2TS               :         0.5101965338
+ RCH4OX                :         1.5323996888
+ RCH4SO4               :         0.1068370099
  RNO3TS                :         0.0000000000
- RTSFE3                :        13.8453883676
- RFESOX                :         0.5165850432
+ RTSFE3                :        10.4608817670
+ RFESOX                :         0.3126280632
  RFESFE3               :         0.0000000000
  RFESMN4               :         0.0000000000
  RMnNO3                :         0.0000000000
@@ -71,40 +71,40 @@
      =============================================
    Definition of the fluxes: out of sediment (-) into it (+)
       Units: [umol/cm2/y]
-   Flux O2         :      814.3777040032
-   Flux O2 Theory  :      117.1515207465
-   Flux NO3        :        2.5118325670
-   Flux SO4        :       28.2001696565
-   Flux PO4        :       -8.1225459914
+   Flux O2         :      812.7710255038
+   Flux O2 Theory  :       90.2891656914
+   Flux NO3        :        2.5099549004
+   Flux SO4        :       22.1595273668
+   Flux PO4        :       -8.1273685540
    Flux PO4 Theory :       -0.0000000000
-   Flux NH4        :       -9.0874089402
-   Flux MnII       :      -61.4390158018
-   Flux FeII       :      -13.7364669705
-   Flux CH4        :       -0.0046016840
+   Flux NH4        :       -8.9435240156
+   Flux MnII       :      -62.0251435795
+   Flux FeII       :      -10.8800576857
+   Flux CH4        :       -0.0035780649
      =============================================
      Fluxes at the bottom:                        
-   Flux O2         :       -0.0008607475
-   Flux NO3        :       -0.0000053644
-   Flux SO4        :       -8.0723908344
-   Flux PO4        :       -0.0007340477
-   Flux NH4        :       -0.0003308079
-   Flux MnII       :       -0.0005010433
-   Flux FeII       :       -0.0269318298
-   Flux CH4        :       -0.0000242254
+   Flux O2         :       -0.0006388715
+   Flux NO3        :       -0.0000051560
+   Flux SO4        :       -8.0778515407
+   Flux PO4        :       -0.0009683227
+   Flux NH4        :       -0.0003617029
+   Flux MnII       :       -0.0005018105
+   Flux FeII       :       -0.0951296059
+   Flux CH4        :        0.0000025718
      =============================================
          Vertical integrated secondary redox-rates
  RNHOX                 :         0.0000000000
- RSOX                  :         0.1495075360
+ RSOX                  :         0.1005737397
  RMNOX                 :         0.0000000000
- RFEOX                 :       112.7292065350
- RMNFE                 :        19.8677743425
+ RFEOX                 :        87.0232188342
+ RMNFE                 :        19.8378178532
  RFENO3                :         0.0000000000
- RMNO2TS               :         0.6276317086
- RCH4OX                :         2.0616495697
- RCH4SO4               :         0.0684639310
+ RMNO2TS               :         0.5101965338
+ RCH4OX                :         1.5323996888
+ RCH4SO4               :         0.1068370099
  RNO3TS                :         0.0000000000
- RTSFE3                :        13.8453883676
- RFESOX                :         0.5165850432
+ RTSFE3                :        10.4608817670
+ RFESOX                :         0.3126280632
  RFESFE3               :         0.0000000000
  RFESMN4               :         0.0000000000
  RMnNO3                :         0.0000000000
@@ -129,40 +129,40 @@
      =============================================
    Definition of the fluxes: out of sediment (-) into it (+)
       Units: [umol/cm2/y]
-   Flux O2         :      814.3777040032
-   Flux O2 Theory  :      117.1515207465
-   Flux NO3        :        2.5118325670
-   Flux SO4        :       28.2001696565
-   Flux PO4        :       -8.1225459914
+   Flux O2         :      812.7710255038
+   Flux O2 Theory  :       90.2891656914
+   Flux NO3        :        2.5099549004
+   Flux SO4        :       22.1595273668
+   Flux PO4        :       -8.1273685540
    Flux PO4 Theory :       -0.0000000000
-   Flux NH4        :       -9.0874089402
-   Flux MnII       :      -61.4390158018
-   Flux FeII       :      -13.7364669705
-   Flux CH4        :       -0.0046016840
+   Flux NH4        :       -8.9435240156
+   Flux MnII       :      -62.0251435795
+   Flux FeII       :      -10.8800576857
+   Flux CH4        :       -0.0035780649
      =============================================
      Fluxes at the bottom:                        
-   Flux O2         :       -0.0008607475
-   Flux NO3        :       -0.0000053644
-   Flux SO4        :       -8.0723908344
-   Flux PO4        :       -0.0007340477
-   Flux NH4        :       -0.0003308079
-   Flux MnII       :       -0.0005010433
-   Flux FeII       :       -0.0269318298
-   Flux CH4        :       -0.0000242254
+   Flux O2         :       -0.0006388715
+   Flux NO3        :       -0.0000051560
+   Flux SO4        :       -8.0778515407
+   Flux PO4        :       -0.0009683227
+   Flux NH4        :       -0.0003617029
+   Flux MnII       :       -0.0005018105
+   Flux FeII       :       -0.0951296059
+   Flux CH4        :        0.0000025718
      =============================================
          Vertical integrated secondary redox-rates
  RNHOX                 :         0.0000000000
- RSOX                  :         0.1495075360
+ RSOX                  :         0.1005737397
  RMNOX                 :         0.0000000000
- RFEOX                 :       112.7292065350
- RMNFE                 :        19.8677743425
+ RFEOX                 :        87.0232188342
+ RMNFE                 :        19.8378178532
  RFENO3                :         0.0000000000
- RMNO2TS               :         0.6276317086
- RCH4OX                :         2.0616495697
- RCH4SO4               :         0.0684639310
+ RMNO2TS               :         0.5101965338
+ RCH4OX                :         1.5323996888
+ RCH4SO4               :         0.1068370099
  RNO3TS                :         0.0000000000
- RTSFE3                :        13.8453883676
- RFESOX                :         0.5165850432
+ RTSFE3                :        10.4608817670
+ RFESOX                :         0.3126280632
  RFESFE3               :         0.0000000000
  RFESMN4               :         0.0000000000
  RMnNO3                :         0.0000000000

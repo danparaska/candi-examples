@@ -47,7 +47,7 @@
    start = '2010-01-01 12:00:00'
    stop = '2040-01-01 12:00:00'
    dt = 3600
-   num_days = 1825
+   num_days = 2555
    timezone = -5
    timefmt = 3
 /
