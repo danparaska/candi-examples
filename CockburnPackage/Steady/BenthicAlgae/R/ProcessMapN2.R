@@ -1,4 +1,4 @@
-N.2.figure<-load.image(paste0(folder,"../../N2Figure.png"))
+N.2.figure<-load.image("N2Figure.png")
 
 units.solid<-matrix(nrow=5,ncol=1
                     ,data=c(
@@ -33,7 +33,7 @@ nit.text <-c(simulation.table.dat$nit,units.solute)
 oxy.text <-c(simulation.table.dat$oxy,units.solute)
 
 
-png(file=paste0(folder,"../../NProcess2.png"),units="mm",res=500,width=220,height=150)
+png(file=paste0(folder,"../NProcess2.png"),units="mm",res=500,width=220,height=150)
 plot(N.2.figure,axes=F,ylim=c(2000,-1000),xlim=c(0,2500),xaxs = "i",yaxs = "i")
 box(bty="n")
 legend(title="PONR",x= -600, y=-300, legend = ponr.text,cex = legendcex,ncol=2,bty="o",text.col=process.map.col,title.col = "black",y.intersp=y.int,box.col = "grey50",box.lwd = 0.1)

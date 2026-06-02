@@ -35,7 +35,7 @@ ifelse( max(eins) < desired.depth ,depthindex<-length(eins)-1,depthindex<-which.
 the.depths<-eins[2:depthindex];the.depths
 
 
-png(filename=paste0(folder,"../../rates.png")
+png(filename=paste0(folder,"../../results/rates.png")
       ,width=widthy,height=heighty  ,res=reso,units="mm"  )
 
 par(mar=margin.list)

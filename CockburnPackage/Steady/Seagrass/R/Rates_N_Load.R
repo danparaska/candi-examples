@@ -31,7 +31,7 @@ legendmatrix<-matrix(   nrow=(length(extrafiles))
                      )
 
 for (i in 1:length(extrafiles)){
-print(extrafiles[i])
+#print(extrafiles[i])
 source("LoadExtraSedData.R")#0 Load the flux and concentration data
 files[i]=extrafiles[i]
 source("ExtrasConcLabels.R")

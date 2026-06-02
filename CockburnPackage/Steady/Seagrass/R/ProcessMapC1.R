@@ -1,4 +1,4 @@
-C.1.figure<-load.image(paste0(folder,"../../C1Figure.png"))
+C.1.figure<-load.image("C1Figure.png")
 
 units.solid<-matrix(nrow=5,ncol=1
                     ,data=c(
@@ -27,9 +27,7 @@ pomr.text<-c(simulation.table.dat$pomr,units.solid)
 poml.text<-c(simulation.table.dat$poml,units.solid)
 dic.text <-c(simulation.table.dat$dic, units.solute)
 
-
-
-png(file=paste0(folder,"../../CProcess1.png"),units="mm",res=800,width=130,height=100)
+png(file=paste0(folder,"../CProcess1.png"),units="mm",res=800,width=130,height=100)
 plot(C.1.figure,axes=F,ylim=c(1500,000),xlim=c(000,800),xaxs = "i",yaxs = "i")
 box(bty="n")
 legend(title="POMR",x= -400, y=100 , legend = pomr.text ,cex = legendcex,ncol=2,bty="o",text.col=process.map.col,title.col = "black",y.intersp=y.int,box.col = "grey50",box.lwd = 0.1)
@@ -41,3 +39,4 @@ legend(title=expression(italic("poml2dic" )), x=-400,y=700,legend = poml2dic,cex
 legend(title=expression(italic("pomr2dic" )), x=700 ,y=700,legend = pomr2dic,cex = legendcex,ncol=1,bty="n",text.col="black",title.col = "black",y.intersp=y.int,box.col = "grey50",box.lwd = 0.1)
 
 dev.off()
+

@@ -1,4 +1,4 @@
-C.2.figure<-load.image(paste0(folder,"../../C2Figure.png"))
+C.2.figure<-load.image("C2Figure.png")
 
 units.solid<-matrix(nrow=5,ncol=1
                     ,data=c(
@@ -29,7 +29,7 @@ docr.text<-c(simulation.table.dat$docr,units.solute)
 docl.text<-c(simulation.table.dat$docl,units.solute)
 dic.text <-c(simulation.table.dat$dic, units.solute)
 
-png(file=paste0(folder,"../../CProcess2.png"),units="mm",res=800,width=150,height=120)
+png(file=paste0(folder,"../CProcess2.png"),units="mm",res=800,width=150,height=120)
 plot(C.2.figure,axes=F,ylim=c(1400,000),xlim=c(600,1400),xaxs = "i",yaxs = "i")
 box(bty="n")
 legend(title="POCR",x= 000, y=60 , legend = pocr.text ,cex = legendcex,ncol=2,bty="o",text.col=process.map.col,title.col = "black",y.intersp=y.int,box.col = "grey50",box.lwd = 0.1)

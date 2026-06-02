@@ -19,9 +19,9 @@ units.solute.1<-matrix(nrow=5,ncol=1
 );units.solute.1
 colnames(units.solute.1)<-"soluteunit";units.solute.1
 simulation.table.uni<-cbind(simulation.table,units.solid.1,units.solute.1);simulation.table.uni
-write.csv(simulation.table.uni,file=paste0(folder,"../../simulation.table.uni.csv"))
+write.csv(simulation.table.uni,file=paste0(folder,"../simulation.table.uni.csv"))
 print(simulation.table)
-png(file=paste0(folder,"../../simulation.table.units.png"),units="mm",res=100,width=500,height=50)
+png(file=paste0(folder,"../simulation.table.units.png"),units="mm",res=100,width=500,height=50)
 grid.table.theme<-  ttheme_minimal(
   core=list(bg_params = list(fill = NA, col=NA),
                               fg_params=list(fontface=1)),

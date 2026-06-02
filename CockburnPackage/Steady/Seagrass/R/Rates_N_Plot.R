@@ -26,7 +26,7 @@ x.axis.sequence = round_any(seq(min(linematrix.4),360,length.out=tick.master.x)
 y.axis.sequence      = round_any(seq(from=depth.tricks[1],to=0
                                      ,length.out=5),depth.tricks[3],f=floor);y.axis.sequence
 
-png(filename=paste0(folder,"../../rates_N.png")
+png(filename=paste0(folder,"../../results/rates_N.png")
       ,width=widthy,height=heighty  ,res=reso,units="mm"  )
 
 dim(linematrix.4)
@@ -78,11 +78,6 @@ legend(
        ,cex = axis.label.size
        )
 
-
-dev.off()
-
- 
- 
 
 dev.off()
 

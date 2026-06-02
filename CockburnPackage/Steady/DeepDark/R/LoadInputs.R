@@ -18,9 +18,9 @@ swibc.1<-fread(swibcname)
 swibc.2<-as.matrix(swibc.1)
 class(swibc.2)<-"numeric" 
 swibc.3<-swibc.2[-1:-4,-1:-1 ]
-colnames(swibc.3)<-gsub(pattern = "'"
-                       ,x = colnames(swibc.3)
-                       ,replacement="");colnames(swibc.3)
+#colnames(swibc.3)<-gsub(pattern = "'"
+#                       ,x = colnames(swibc.3)
+#                       ,replacement="")#;colnames(swibc.3)
 swibc.4<-data.frame(swibc.3)
 swibc.av<-   signif(colMeans(swibc.4),2); swibc.av
 swibc.av<-   signif(swibc.av,2); swibc.av

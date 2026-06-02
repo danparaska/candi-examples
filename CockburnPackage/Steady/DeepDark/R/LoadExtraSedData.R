@@ -10,7 +10,6 @@ if(nchar(zones[z])==3){sed<-(paste0(folder,"00"  ,zones[z],"/Extras/",extrafiles
 file    <-fread(file=sed, header=FALSE, skip=3)# Load sed data
 eins<-as.matrix(file[1,]) # First column
 class(eins)<-"numeric"
-# uno <-as.numeric(as.matrix(fluxdata[3:dim(fluxdata)[1],1]))
 uno <-as.numeric(as.matrix(file[1:dim(file)[1],1]))
 ifelse( max(uno,na.rm=T) < start.time ,time.start.index<-which.max(uno), time.start.index<-which.min(abs(uno - start.time)))
 ifelse( max(uno,na.rm=T) < stop.time  ,time.stop.index <-which.max(uno)-1, time.stop.index <-which.min(abs(uno - stop.time )))

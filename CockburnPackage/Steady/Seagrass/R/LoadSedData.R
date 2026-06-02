@@ -26,8 +26,7 @@ flux.av<-   signif(flux.av,3); flux.av
 for(ff in 1:  ncol(simulation.table) ){
   flux.av.col  <- as.numeric(which(colnames(simulation.table)[ff]==names(flux.av)  ) )
   simulation.table[2,ff] <- flux.av[flux.av.col]
-  
-};simulation.table
+  };simulation.table
 
 ifelse( abs(max(timey,na.rm=T))>1
           ,roundx   <- 10^floor(log10(abs(max(timey,na.rm=T))) )/10
@@ -52,6 +51,10 @@ file    <-fread(file=sed, header=FALSE, skip=3)# Load sed data
 
 eins<-as.matrix(file[1,]) # First column
 
-
-
-# folder<-paste0("V:/danp/UAE/5/1yf/","D","/results/candi_aed/")
+for(ff in 1:  ncol(simulation.table) ){
+  if(length(grep( colnames(simulation.table)[ff] , names(swibc.av)))>0){
+    swibc.av.col  <- as.numeric(which(colnames(simulation.table)[ff]==names(swibc.av)  ) )
+    simulation.table[1,ff] <- swibc.av[swibc.av.col]
+  }   # If in swibc 
+} ; simulation.table # For ff  
+    

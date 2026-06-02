@@ -25,7 +25,7 @@ ifelse( max(eins) < desired.depth ,depthindex<-length(eins)-1,depthindex<-which.
 the.depths<-eins[2:depthindex];the.depths
 y.axis.sequence      = round_any(seq(from=depth.tricks[2],to=depth.tricks[1]
                                      ,length.out=6),depth.tricks[3],f=floor);y.axis.sequence
-png(filename=paste0(folder,"../../rates(factors).png")
+png(filename=paste0(folder,"../../results/rates(factors).png")
       ,width=widthy,height=heighty  ,res=reso,units="mm"  )
 
 par(mar=margin.list)
