@@ -1,6 +1,0 @@
-"","amm","ch4","dic","poml","pomr","solidunit","soluteunit"
-"swibc file or default vals","2","1e-10","2000","1e-10","1e-10","mmol m-2 y-1","mmol m-3"
-"Average flux throughout sim","-113","-0.176","-9090","8470","2120","mmol m-2 y-1","mmol m-2 y-1"
-"Average conc 2 cm","0.0014","2.7e-07","2.1","160","1200","mmol L-1","mmol L-1"
-"Final mass","0.00012","1.4e-08","0.71","12","82","g m-2","g m-2"
-"Maximum conc","0.021","0.00015","3.3","250","2000","mmol L-1","mmol L-1"
