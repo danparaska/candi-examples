@@ -1,5 +1,5 @@
 # Steady boundary conditions
-# Deep dark environment
+## Deep dark environment
 
 This simulation folder is set up to run the Deep dark environment for five years of spin up and then two years of simulation. The boundary concentrations and fluxes at the sediment-water interface are constant for the whole simulation. 
 

@@ -1,5 +1,5 @@
 # Scenario: organic matter rises for a month
-# Deep dark environment
+## Deep dark environment
 
 This simulation folder is set up to run the Deep dark environment for five years of spin up and then five years of seasonal oscillations, then one year that includes a month of higher organic matter in the bottom water. 
 

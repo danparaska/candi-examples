@@ -1,5 +1,5 @@
 # Steady boundary conditions
-# Seagrass environment
+## Seagrass environment
 
 This simulation folder is set up to run the Seagrass environment for five years of spin up and then two years of simulation. After the spinup, the boundary concentrations and fluxes at the sediment-water interface are taken from a water column simulation and reflect typical seasonal oscillations. 
 

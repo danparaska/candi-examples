@@ -68,6 +68,4 @@ source("Panel-Cd.R")    #5
 simulation.table
 dev.off() # Close the png file
 }; source("DrawSimTable.R"); processmaps() # end i loop; Write the summary table;
-# processmaps is a function found within MultiplotSettings.R, which calls a ProcessMap script
-# to make a 
 dev.off()

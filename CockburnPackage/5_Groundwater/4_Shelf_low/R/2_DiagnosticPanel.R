@@ -33,8 +33,8 @@ files<-c(
 );source("ColourSettings.R");source("MultiplotSettings.R");source("LoadInputs.R"); source("LoadAEDParameters.R")
 
 # Load other plot settings
-start.year = 5.0 # Start at this year to avoid spinup time
-stop.year  = 7.0
+start.year = 3.0 # Start at this year to avoid spinup time
+stop.year  = 4.0
 start.time = start.year*365
 stop.time  = stop.year *365
 
@@ -68,6 +68,4 @@ source("Panel-Cd.R")    #5
 simulation.table
 dev.off() # Close the png file
 }; source("DrawSimTable.R"); processmaps() # end i loop; Write the summary table;
-# processmaps is a function found within MultiplotSettings.R, which calls a ProcessMap script
-# to make a 
 dev.off()
