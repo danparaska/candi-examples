@@ -1,5 +1,7 @@
 # Cockburn Sound sediment model simulations
 
-This folder contains the simulations described in the Cockburn Sound documentation, along with plotting scripts.
+This folder contains the simulations described in the [Cockburn Sound documentation](https://csiem.seaf.org.au/candi-aed.html#sediment-model-simulation-setup), along with plotting scripts. 
 
-[Here](https://csiem.seaf.org.au/candi-aed.html#sediment-types)
+The steady simulation has constant boundary conditions at the sediment-water interface, as described in part 12.2.3 of the [Cockburn Sound documentation](https://csiem.seaf.org.au/candi-aed.html#sediment-model-simulation-setup). The seasonal simulation has a seasonally-varying boundary condition, as described in [part 12.2.6, Seasonal simulation setup](https://csiem.seaf.org.au/candi-aed.html#sensitivity-to-water-quality-changes). Two simulations with one-off events are presented here. Bottom water oxygen concentration drops for a month, as described in [part 12.2.6, Low oxygen period setup](https://csiem.seaf.org.au/candi-aed.html#sensitivity-to-water-quality-changes). Bottom water organic matter increases for a month, as described in [part 12.2.6, High organic matter period setup](https://csiem.seaf.org.au/candi-aed.html#sensitivity-to-water-quality-changes). Finally, four simulations are presented where groundwater flows into the sediment, as described in [part 12.2.7, Sensitivity to groundwater flow](https://csiem.seaf.org.au/candi-aed.html#sensitivity-to-groundwater-inflow). 
+
+Each simulation contains a model executable that runs on linux, GLM version 3.3, with some modifications to enable the sediment model CANDI AED. CANDI AED is described in detail in the [AED manual](https://aquaticecodynamics.github.io/aed-science/sediment-biogeochemistry.html). 
